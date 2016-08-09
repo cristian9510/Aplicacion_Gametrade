@@ -15,8 +15,28 @@
 	<?php require_once("header.php"); ?>
 
 	<div id="e64Monstrar">
-		<div id="e64ClosPrinci">X</div>
+		<div id="e64ClosPrinci" onclick="sbclose('1');">X</div>
 		<div id="e64ContePrinci"></div>
+	</div>
+
+	<div id="e64ConteContra">
+		<div id="e64Contras">
+			<div id="e64ClosPrinciC" onclick="sbclose('2');">X</div>
+			<div id="e64ConsultUsu">
+				<ul id="ulConsultUsu">
+					<li><input type="number" placeholder="Numero de Documento"/><div>Consultar</div></li>
+				</ul>
+			</div>
+
+			<hr>
+			<div id="e64NueContra">
+				<ul id="ulNueContra">
+					<li><label>Nueva Contraseña<span>*</span></label><input type="text" /></li>
+					<li><label>Confirmar Contraseña<span>*</span></label><input type="text" /></li>
+					<li><div>Guardar</div></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
 

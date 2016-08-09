@@ -17,7 +17,7 @@ function sb_menu(vVar){
 		break;
 
 		case "contrasena":
-			//self.location.href="usa.php";
+				$("#e64ConteContra").fadeIn();
 		break;
 
 		case "regist":
