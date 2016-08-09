@@ -1,0 +1,21 @@
+#e64ContRegist{
+	width: 50%;
+	height: 120px;
+	border:groove 1px;
+}
+
+#ulContRegist{
+	width: 100%;
+	height: 600px;
+	background: #ccc;	
+}
+
+#ulContRegist label{
+	display: inline-block;
+}
+#ulContRegist input{
+	display: inline-block;
+}
+#ulContRegist select{
+	display: inline-block;
+}

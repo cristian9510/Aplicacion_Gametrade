@@ -1,0 +1,131 @@
+
+#art_left_admin{
+
+	vertical-align: top;
+	display: inline-block;
+
+}
+
+#art_center_admin{
+
+	display: inline-block;
+}
+
+#admin_consola{
+
+	margin: center;
+	text-align: center;
+	padding-top: 25px;
+}
+
+/*cuadro donde ba el titulo*/
+#cuadro{
+
+	background-color: #212121;
+    margin-left: 250px;
+
+    width: 800px;
+    height: 100px;
+
+}
+
+#cuadrado{
+
+  background-color: #212121;
+    margin-left: 250px;
+
+    width: 800px;
+    height: 100px;
+
+}
+
+#micuadro{
+
+  background-color: #212121;
+    margin-left: 250px;
+
+    width: 800px;
+    height: 100px;
+
+}
+
+#cua{
+
+  background-color: #212121;
+    margin-left: 250px;
+
+    width: 800px;
+    height: 100px;
+
+}
+
+#cualid{
+
+  background-color: #212121;
+    margin-left: 250px;
+
+    width: 800px;
+    height: 100px;
+
+}
+
+h1{
+
+  text-align: center;
+  padding-top: 25px;
+	color: white;
+}
+
+/*se le da forma el formulario de bonos*/
+.formulario{
+  margin: auto;
+  padding: auto;
+  width: 200px;
+}
+
+.titulo_bono{
+	background-color:black;
+	width: 800px;
+	height: 100px;
+	margin-left: 250px;
+}
+
+.tablabono{
+	margin-top: 40px;
+	margin-left: 33%;
+
+}
+/*aqui termina bono*/
+
+/*Estilos para categoría juego:*/
+
+.Titulo_Cat{
+	background-color:black;
+	width: 800px;
+	height: 100px;
+	margin-left: 250px;
+	color: white;
+}
+
+.Categoria{
+	margin: auto;
+  	padding: auto;
+  	width: 200px;
+}
+
+/*Estilos para puntos:*/
+
+.titulo_puntos{
+	background-color:black;
+	width: 800px;
+	height: 100px;
+	margin-left: 250px;
+	color: white;
+}
+
+.formulario_pto{
+	margin: auto;
+  	padding: auto;
+  	width: 200px;
+}
+>>>>>>> origin/master
