@@ -216,3 +216,7 @@ hr{
 	display: inline-block;
 	margin-left: 20px;
 }
+
+#e64ConteContra{
+	display: none;
+}

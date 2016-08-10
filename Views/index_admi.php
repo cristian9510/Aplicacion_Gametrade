@@ -99,7 +99,7 @@ usuario
 								echo "<option>Seleccionar</option>";
 
 								foreach ($Mcategoria as $categor) {
-									echo "<option value=".$categor["cat_jue_cod"].">".$categor["cat_jue_nom"]."</option>";
+									echo "<option value=".$categor["cat_cod"].">".$categor["cat_nom"]."</option>";
 								}
 
 							?>
@@ -111,7 +111,7 @@ usuario
 					<li><label>Imagen </label><input type="text" name="txtImagen" id="txtImagen" disabled="disabled" /></li>
 					<li><label>Trailer</label><input type="text" name="txtTrailer" id="txtTrailer" disabled="disabled" /></li>
 					<li><label>Estado</label>
-						<select id="txtEstado" disabled>
+						<select id="txtEstado" name="txtEstado" disabled>
 							<option value="0">Activo</option>
 							<option value="1">Inactivo</option>
 						</select></li>

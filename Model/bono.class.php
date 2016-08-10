@@ -5,7 +5,7 @@ class bono{
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="INSERT INTO tbl_bono(cat_bono_cod,pto_cod,bono_desc,bono_cant) values(?,?,?,?)";
+    $sql="INSERT INTO tb_bono(cat_bono_cod,pto_cod,bono_desc,bono_cant) values(?,?,?,?)";
 
     $query= $pdo->prepare($sql);
     $query->execute(array($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant));
@@ -18,7 +18,7 @@ class bono{
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="select * from tbl_bono";
+    $sql="select * from tb_bono";
 
     $query= $pdo->prepare($sql);
     $query->execute();
@@ -35,7 +35,7 @@ class bono{
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="select * from tbl_bono WHERE bono_cod=?";
+    $sql="select * from tb_bono WHERE bono_cod=?";
 
     $query= $pdo->prepare($sql);
     $query->execute(array($codigo));
@@ -53,7 +53,7 @@ class bono{
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="UPDATE tbl_bono SET cat_bono_cod= ? ,pto_cod= ?, bono_desc= ?, bono_cant= ? WHERE bono_cod= ?";
+    $sql="UPDATE tb_bono SET cat_bono_cod= ? ,pto_cod= ?, bono_desc= ?, bono_cant= ? WHERE bono_cod= ?";
     $query= $pdo->prepare($sql);
     $query->execute(array($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant,$bono_cod));
 

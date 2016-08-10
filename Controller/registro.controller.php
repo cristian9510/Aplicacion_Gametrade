@@ -25,8 +25,10 @@ $accion=$_POST["v_action"];
  		 $photo=$_POST["photo"];
 
  		 try {
- 		 	registro_class::guardar($codigoRol,$estado,$tipDocument,$numDocum,$nombre,$apellido,$nacimiento,$telefono,$celphone,$direccion,$ciudad,$correo,$usuario,$contrasena,$photo);
- 		 
+ 		 	$registroG=registro_class::guardar($codigoRol,$estado,$tipDocument,$numDocum,$nombre,$apellido,$nacimiento,$telefono,$celphone,$direccion,$ciudad,$correo,$usuario,$contrasena,$photo);
+ 		 	
+ 		 	$registroG= "({st:'ok'})";
+ 		 	
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }

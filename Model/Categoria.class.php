@@ -1,6 +1,8 @@
 <!--Se recojen los datos para envíarlos a la Base de Datos-->
 <?php
+
 class Categoria_jue{
+ 
   function Guardar($cat_cod, $cat_nom, $cat_fech, $cat_desc, $cat_estado){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -11,7 +13,7 @@ class Categoria_jue{
     $query->execute(array($cat_cod, $cat_nom, $cat_fech, $cat_desc, $cat_estado));
 
     ConexionBD::DesconectarBD();
-
+}
     function Consultar(){
 
  		$pdo = ConexionBD::AbrirBD();
