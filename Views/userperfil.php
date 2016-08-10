@@ -7,7 +7,15 @@
 </head>
 <body>
 	<div id="dv_main">
-		<?php require_once("header.php"); ?>
+		<header>
+			<div>Mi perfil</div>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</header>
 	</div>
 </body>
 </html>
