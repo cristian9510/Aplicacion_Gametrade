@@ -24,6 +24,17 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 	<div id="dv_main">
 	<?php require_once("header.php"); ?>
 <div id="e64ContRegist">
+	<div id="e64REusu">Registro en Gametrade</div>
+	<div>
+		<h2>¿Por qué registrarse en Gametrade? </h2>
+		<ul id="textUsu">
+			<li>Es gratuito</li>
+			<li>Participa en nuestros sorteos y concursos</li>
+			<li>Estas atanto de las ultimas tendencias de videojuegos</li>
+			<li>Y muchos mas...</li>
+		</ul>
+	</div>
+	<h2>Formulario de registro</h2>
 	<form action="../Controller/registro.controller.php" method="post">
 		<ul id="ulContRegist">
 			<li><label for="">Tipo de documento</label>
@@ -34,7 +45,7 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 					<option value="3">Cedula de Estranjeria</option>
 				</select>
 			</li>
-			<li><label for="numDocument">Numero de Documento</label><input type="number" id="" name="numDocument" required/></li>
+			<li><label for="numDocument">Numero de Documento</label><input type="number" id="numDocument" name="numDocument" required/></li>
 			<li><label for="">Nombre Completo</label><input type="text" id="nameRegist"  name="nameRegist" required/></li>
 			<li><label for="">Apellido Completo</label><input type="text" id="lastRegist"  name="lastRegist" required/></li>
 			<li><label for="">Fecha de nacimiento</label><input type="date" id="bornRegist"  name="bornRegist" required/></li>
@@ -56,9 +67,9 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 			<li><label for="">Correo Electronico</label><input type="email" id="emailRegist"  name="emailRegist" required/></li>
 			<li><label for="">Usuario</label><input type="text" id="nickRegist"  name="nickRegist" required/></li>
 			<li><label for="">Contraseña</label><input type="password" id="passRegist"  name="passRegist" required/></li>
-			<li><label for="">Photo</label><input type="file" id="photoRegist"  name="photoRegist"/></li>
+			<!--<li><label for="">Photo</label><input type="file" id="photoRegist"  name="photoRegist"/></li>-->
 			<!--<li><button name="action" value="AgregarUsuario">Guardar</button></li>-->
-			<li><div onclick="enviar()">enviar</div></li>
+			<li><div id="enviarR" onclick="enviar()">Registrarme</div></li>
 		</ul>
 	</form>
 </div>

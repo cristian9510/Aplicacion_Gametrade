@@ -24,13 +24,13 @@ var ajax=fn_httpservice();
 
  		 usuario=$("#nickRegist").val();
  		 contrasena=$("#passRegist").val();
- 		 photo=$("#photoRegist").val();
+ 		// photo=$("#photoRegist").val();
 
  		 vsaveD="guardar";
 
 
-			var v_temp="v_action="+vsaveD+"&codigoRol="+codigoRol+"&estado="+estado+"&tipDocument="+tipDocument+"&numDocum="+numDocum+"&nombre="+nombre+"&apellido="+apellido+"&nacimiento="+nacimiento+"&telefono="+telefono+"&celphone="+celphone+"&direccion="+direccion+"&ciudad="+ciudad+"&correo="+correo+"&usuario="+usuario+"&contrasena="+contrasena+"&photo="+photo;
-alert(v_temp);
+			var v_temp="v_action="+vsaveD+"&codigoRol="+codigoRol+"&estado="+estado+"&tipDocument="+tipDocument+"&numDocum="+numDocum+"&nombre="+nombre+"&apellido="+apellido+"&nacimiento="+nacimiento+"&telefono="+telefono+"&celphone="+celphone+"&direccion="+direccion+"&ciudad="+ciudad+"&correo="+correo+"&usuario="+usuario+"&contrasena="+contrasena;
+
 				ajax.send(v_temp);
 
 				ajax.onreadystatechange=function(){
@@ -39,7 +39,7 @@ alert(v_temp);
 					if (ajax.status == 200) {
 						
 						v_temp= ajax.responseText;
-alert(v_temp);
+
 						try{
 							jo_user=eval(v_temp);
 						}
@@ -49,8 +49,8 @@ alert(v_temp);
 						}
 						if (jo_user['st']=="ok"){
 							
-							alert(11111111111);
-							}
+							self.location.href="index.php";
+						}
 						}
 					}
 				}

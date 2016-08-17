@@ -5,9 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
 	<link rel="stylesheet" type="text/css" href="stylesSheet/mindex.css"/>
 	<link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
+
 	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/mindexC.js"></script>
+	<script type="text/javascript" src="js/connection.js"></script>
 	<script type="text/javascript" src="js/gweb.js"></script>
+	<script type="text/javascript" src="js/mindexC.js"></script>
+	
 </head>
 <body>
 
@@ -19,25 +22,7 @@
 		<div id="e64ContePrinci"></div>
 	</div>
 
-	<div id="e64ConteContra">
-		<div id="e64Contras">
-			<div id="e64ClosPrinciC" onclick="sbclose('2');">X</div>
-			<div id="e64ConsultUsu">
-				<ul id="ulConsultUsu">
-					<li><input type="number" placeholder="Numero de Documento"/><div>Consultar</div></li>
-				</ul>
-			</div>
-
-			<hr>
-			<div id="e64NueContra">
-				<ul id="ulNueContra">
-					<li><label>Nueva Contraseña<span>*</span></label><input type="text" /></li>
-					<li><label>Confirmar Contraseña<span>*</span></label><input type="text" /></li>
-					<li><div>Guardar</div></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	
 
 
 

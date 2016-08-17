@@ -3,14 +3,13 @@
 	<div id="dvContel">
 		<div id="invitLogin">Ingresa ya a nuestra pagina</div>
 		<div id="dvLogin">
-
 			<div>
 
 			<ul id="Login">
-				<li id="dvCode"><input type="text" placeholder="Nick" name="txtCode" id="txtCode" required="required"/></li>
-				<li><input type="password" placeholder="*************" name="txtName" id="txtName" required="required" /></li>
+				<li id="dvCode"><input type="text" placeholder="Nick" name="txtCode" id="txtUsua" required="required"/></li>
+				<li><input type="password" placeholder="*************" name="txtName" id="txtPass" required="required" /></li>
 			</ul>
-			<div id="dvButonL"><button  name="btnusu" id="btnOpen" value="ingresoUsu"></button></div>
+			<div id="dvButonL" onclick="ConsultUsu();"><button  name="btnusu" id="btnOpen" value="ingresoUsu"></button></div>
 			</div>
 			</div>
 
@@ -34,3 +33,24 @@
 		<li>Como se usa</li>
 	</ul>
 </nav>-->
+
+
+<div id="e64ConteContra">
+		<div id="e64Contras">
+			<div id="e64ClosPrinciC" onclick="sbclose('2');">X</div>
+			<div id="e64ConsultUsu">
+				<ul id="ulConsultUsu">
+					<li><input type="number" id="txtBuscarContra" placeholder="Numero de Documento"/><div onclick="sbConsultar('consult')">Consultar</div></li>
+				</ul>
+			</div>
+
+			<hr>
+			<div id="e64NueContra">
+				<ul id="ulNueContra">
+					<li><label>Nueva Contraseña<span>*</span></label><input type="password" id="txtNContr" /></li>
+					<li><label>Confirmar Contraseña<span>*</span></label><input type="password" id="txtConfirContr" /></li>
+					<li><div onclick="sbConsultar('guardarC')">Guardar</div></li>
+				</ul>
+			</div>
+		</div>
+	</div>

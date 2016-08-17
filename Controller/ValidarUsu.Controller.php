@@ -2,31 +2,25 @@
 include_once("../Model/conexion.php");
 include_once("../Model/validarUsu.class.php");
 
-$accion= $_POST["btnusu"];
+$accion= $_POST["v_action"];
+//$accion= $_POST["btnusu"];
 
 switch ($accion) {
-	case 'ingresoUsu':
+	case 'Consultar':
 
-		$usuario=$_POST["txtCode"];
-		$clave=$_POST["txtName"];
+		$usua=$_POST["usua"];
+		$pass=$_POST["pass"];
 
 		try {
-			$result=Gestionar_Usu::validarUsu($usuario,$clave);
+			$result=Gestionar_Usu::validarUsu($usua,$pass);
+			
 			if ($result!="") {
 			
 			$_SESSION['usu_nom'] =$result['usu_nom']; 
-			
-			header("location:../Views/userperfil.php");
-		
-			}else{
-				$num=0;
-				echo "<script languaje= 'Javascript'>alert('Datos invalidos')</script>";
-				exit();
-			}
+			echo "({st:'ok'})";
 
-			if ($num==0) {
-				echo "sssss";
-				header("location:../Views/index.php");
+			}else{	
+				echo "no paso";
 			}
 		
 
@@ -34,6 +28,47 @@ switch ($accion) {
 			echo $e;
 		}
 		break;
+
+		case 'ConsultarContra':
+		
+		$contra=$_POST["contra"];
+
+		try {
+			$resultContr=Gestionar_Usu::validarContra($contra);
+			
+			if ($resultContr!="") {
+				echo "({st:'ok'})";
+			}else{	
+				echo "no paso";
+			}
+		
+
+		} catch (Exception $e) {
+			echo $e;
+		}
+			break;
+
+
+			case 'GuardarContra':
+		
+			$NumC=$_POST["NumC"];			
+			$ConfirContra=$_POST["ConfirContra"];
+
+			try {
+				$resultContrG=Gestionar_Usu::validarGuarContra($NumC,$ConfirContra);
+				
+				if ($resultContrG!="") {
+					echo "no paso";
+				}else{	
+					echo "({st:'ok'})";
+				}
+		
+			} catch (Exception $e) {
+				echo $e;
+			}
+			break;
+
+
 }
 
 ?>
