@@ -144,4 +144,18 @@ h1{
 .AboutUs>h2{
 	color: black;
 }
+
+/*formulario  de usa wilton acuña*/
+.usa{
+	border: inset;
+	margin-left: 10%;
+	max-width: 78%;
+
+}
+
+.usa>h1{
+	color: black;
+	text-align: center;
+}
+
 >>>>>>> origin/master
