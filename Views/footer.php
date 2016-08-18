@@ -107,7 +107,7 @@ Google Plus
 
 
 
-<div align="right" style="margin-top:-220px;"><img src="imagen/logotipo.PNG"></div>
+<div align="right" style="margin-top:-120px;"><img src="imagen/logos.PNG"></div>
 
 
 
