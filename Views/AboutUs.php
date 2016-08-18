@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
-    <link rel="stylesheet" href="Views/stylesSheet/estilo.css">
+    <link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css">
     <title>quienes somos</title>
   </head>
   <body>
@@ -20,6 +20,7 @@
         Ademas en el la pagina  se abre un link donde podemos informarnos de lo ultimo en juegos de video y recibir ayuda por parte de los usuarios que
         a ella ingresen, este servicio es totalmente gratuito.
       </p>
+      <img src="imagen/fotosUser/wilton.JPG" alt="" />
       <br>
       <h2>Mision.</h2>
       <p>

@@ -20,10 +20,8 @@
 
 /*cuadro donde ba el titulo*/
 #cuadro{
-
 	background-color: #212121;
     margin-left: 250px;
-
     width: 800px;
     height: 100px;
 
@@ -109,8 +107,8 @@ h1{
 
 .Categoria{
 	margin: auto;
-  	padding: auto;
-  	width: 200px;
+  padding: auto;
+	width: 200px;
 }
 
 /*Estilos para puntos:*/
@@ -131,7 +129,19 @@ h1{
 
 /*formulario de AboutUs wilton acuña*/
 .AboutUs{
-	max-width: 800px;
-	background: #3519fc;
+	border: inset;
+	margin-left: 10%;
+	max-width: 78%;
+}
+
+.AboutUs>h1{
+	color: black;
+	text-align: left;
+}
+.AboutUs>p{
+	color: black;
+}
+.AboutUs>h2{
+	color: black;
 }
 >>>>>>> origin/master
