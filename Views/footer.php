@@ -1,14 +1,15 @@
 <footer>
     
-	<h1 style="text-align: center;">Siguenos tambien aqui</h1>
+	<h1 >Siguenos tambien aqui</h1>
 
+	
 	<style>
 /* Botones de Redes Sociales - Ciudad Blogger */
 .social_bookmarks_container {
 width:100%;
-height:65px;
+height:45px;
 padding:0;
-position:relative;
+position:absolute;
 }
 .social_bookmarks {
 position:relative;
@@ -28,6 +29,8 @@ padding:0;
 -o-transition: all 0.4s ease-in-out;
 -ms-transition: all 0.4s ease-in-out; 
 transition: all 0.4s ease-in-out;
+background-position:center
+
 }
 .social_bookmarks li a {
 float:left;
@@ -39,7 +42,7 @@ margin:0px;
 outline: none;
 padding:0;
 min-height:57px;
-height:100%;
+height:180%;
 text-decoration:none;
 }
 .social_bookmarks .iconrss{background: #A4A4A4 url(//lh6.googleusercontent.com/-s8sIx3OX2WI/U4vC1nmgr0I/AAAAAAAALK4/W3Z3qXMwrCg/s114/icon-rss.png) top left no-repeat;}
@@ -54,6 +57,8 @@ text-decoration:none;
 .social_bookmarks .iconrssmail:hover{background-position:center -57px; background-color: #FFDE00;}
 .social_bookmarks li:hover a{background: transparent url(//lh4.googleusercontent.com/-XNviZ_JqvyU/U4vDMDFAX8I/AAAAAAAALLk/E4VIJr1onlo/s57/icon-social-reflect.png) no-repeat;
 }
+
+
 </style>
 <div class='social_bookmarks_container'>
 <ul class='social_bookmarks'>
@@ -83,9 +88,13 @@ Google Plus
 </a>
 </li>
 </ul>
+
+<input type="hidden" name="as_filetype" value=".doc" />
+
 </div>
 
 
+    <h2 style="text-align: center;">Contactenos</h2>
 
 
 	<p style="text-align: center;">
@@ -93,4 +102,13 @@ Google Plus
 
 	<p style="text-align: center;">Copyright 2016 ciudadanoo
 	tempor incididunt .</p>
+
+	<p style="text-align: center;">numero telefonico:345621</p>
+
+
+
+<div align="right" style="margin-top:-220px;"><img src="imagen/logotipo.PNG"></div>
+
+
+
 </footer>
