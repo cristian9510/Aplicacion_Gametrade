@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div id="dv_main">
-		<? include("header_Usu.php"); ?>
+		<?php require_once("header_Usu.php"); ?>
 		<div></div>
 	</div>
 </body>

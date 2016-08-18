@@ -3,6 +3,7 @@
 <head>
 	<title>COMO SE USA</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css">
 	<link rel="stylesheet" type="text/css" href="stylesSheet/estilousu.css">
 </head>
 <body>
@@ -10,7 +11,7 @@
 		<?php require_once("header.php"); ?>
 	</div>
 		<div id="omos">
-			<h1>¿QUIENES SOMOS?</h1>
+			<h1>Como se usa</h1>
 		TUTORIAL PARA CONOCER GAMETRADE
 		<br>
 		<br>
