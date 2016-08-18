@@ -26,9 +26,9 @@ $bono= bono::mostrar_bono();
     <br>
     <label>Código de categoria de bono: </label>
 
-    <select id="cat_bono_cod" name="cat_bono_cod" >
+    <select id="cat_bono_cod" name="cat_bono_cod" required>
       <?php
-        echo "<option>seleccione</option>";
+        echo "<option>Seleccione</option>";
 
           foreach ($cat_bono_cod as $categoria) {
             echo "<option value=".$categoria["cat_bono_cod"].">".$categoria["cat_bono_nom"]."</option>";
@@ -39,9 +39,9 @@ $bono= bono::mostrar_bono();
     </br>
     </br>
     <label>Codigo de punto: </label>
-    <select id="pto_cod" name="pto_cod">
+    <select id="pto_cod" name="pto_cod" required>
       <?php
-        echo "<option>seleccione</option>";
+        echo "<option>Seleccione</option>";
 
           foreach ($pto_cod as $puntos) {
             echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_moneda"]."</option>";
@@ -52,11 +52,11 @@ $bono= bono::mostrar_bono();
     </br>
     </br>
     <label>Descripción de bono:</label>
-    <input type="text" name="bono_desc"/>
+    <input type="text" name="bono_desc" required/>
     </br>
     </br>
     <label>Cantidad de bonos:</label>
-    <input type="text" name="bono_cant"/>
+    <input type="text" name="bono_cant" required/>
     </br>
     </br>
     <!--este es el boton-->
