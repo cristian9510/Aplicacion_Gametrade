@@ -9,7 +9,7 @@ function sb_menu(vVar){
 		break;
 
 		case "contact":
-			self.location.href="contacto.php";
+			self.location.href="contactenos.php";
 		break;
 
 		case "usa":

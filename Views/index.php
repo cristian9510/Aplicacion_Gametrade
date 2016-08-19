@@ -90,6 +90,6 @@
 
 <div id="e64Public3"></div>
 </div>
-
+<?php require_once("footer.php"); ?>
 </body>
 </html>
