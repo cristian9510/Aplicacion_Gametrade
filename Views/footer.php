@@ -1,6 +1,6 @@
 <footer>
     
-	<h1 >Siguenos tambien aqui</h1>
+	<h1 >Siguenos Tambien Aqui</h1>
 
 	
 	<style>
@@ -103,7 +103,7 @@ Google Plus
 	<p style="text-align: center;">Copyright 2016 ciudadanoo
 	tempor incididunt .</p>
 
-	<p style="text-align: center;">numero telefonico:345621</p>
+	<p style="text-align: center;">Tel:3456214546</p>
 
 
 

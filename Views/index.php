@@ -62,13 +62,20 @@
 	</div>
 
 
-<div id="e63JueDestac">VideosJuegos mas descatados</div>
+<div id="e63JueDestac">VideosJuegos Mas Destacados</div>
 <ul id="ulNoticJue">
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
+	<li id="juego"></li>
+	<li id="juegos"></li>
+	<li id="jueg"></li>
+	<li id="jue"></li>
+	<li id="ju"></li>
+
+
+	<li id="videos"></li>
+	<li id="video"></li>
+	<li id="vide"></li>
+	<li id="vid"></li>
+	<li id="vi"></li>
 </ul>
 <ul id="ulNoticJue">
 	<li></li>

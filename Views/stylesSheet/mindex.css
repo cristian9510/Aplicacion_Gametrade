@@ -69,7 +69,56 @@
 	overflow: hidden;
 	float: left;
 	margin-left: 10px;
-	background: url(../Imagen/diseno/4.png);
+	
+}
+#juego{
+	background: url(../Imagen/diseno/8.png);
+}
+
+
+#juegos{
+     background: url(../Imagen/diseno/9.png);
+}
+
+
+
+#jueg{
+     background: url(../Imagen/diseno/4.png);
+}
+
+
+#jue{
+     background: url(../Imagen/diseno/10.png);
+}
+
+
+#ju{
+     background: url(../Imagen/diseno/11.png);
+}
+
+
+#videos{
+     background: url(../Imagen/diseno/12.png);
+}
+
+
+
+#video{
+     background: url(../Imagen/diseno/13.png);
+}
+
+#vide{
+     background: url(../Imagen/diseno/14.png);
+}
+
+
+#vid{
+     background: url(../Imagen/diseno/15.png);
+}
+
+
+#vi{
+     background: url(../Imagen/diseno/16.png);
 }
 
 
