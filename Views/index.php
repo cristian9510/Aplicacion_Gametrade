@@ -37,6 +37,17 @@
 					<img src="Imagen/1S.jpg" alt>
 					<figcaption>Wanaka, New Zealand</figcaption>
 				</figure>
+
+                <figure>
+					<img src="Imagen/mar.jpg" alt>
+					<figcaption>Wanaka, New Zealand</figcaption>
+				</figure>
+
+				<figure>
+					<img src="Imagen/va.jpg" alt>
+					<figcaption>Wanaka, New Zealand</figcaption>
+				</figure>
+
 				<figure>
 					<img src="Imagen/2S.jpg" alt>
 					<figcaption>Hobbiton, New Zealand</figcaption>
@@ -53,7 +64,7 @@
 		</div>
 	</div>
 	<div id="e64Video">
-		<iframe width="950" height="400" src="https://www.youtube.com/embed/pRQk4K-UbaU" frameborder="0" allowfullscreen></iframe>
+		<iframe width="950" height="400" src="https://www.youtube.com/watch?v=LzUYvgtvSoY" frameborder="0" allowfullscreen></iframe>
 	</div>
 
 	<div id="e64ContePublic">
