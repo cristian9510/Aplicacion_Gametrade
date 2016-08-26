@@ -1,15 +1,15 @@
 <?php
 require_once("../Model/conexion.php");
-include("../Model/ciudad.class.php");
+include("../Model/centro.class.php");
 
-$ciudad=Gestion_Ciudad::cargarciudad();
+$centro=Gestion_Ciudad::cargarcentro();
 
 ?>
 
 
 <!DOCTYPE html>
 <head>
-	<title>Registro</title>
+	<title>Registro_instructores</title>
 		<meta charset="utf8"/>
 		<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
 		<link rel="stylesheet" type="text/css" href="stylesSheet/registro.css"/>
@@ -24,9 +24,12 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 	<div id="dv_main">
 	<?php require_once("header.php"); ?>
 <div id="e64ContRegist">
-	<div id="e64REusu">Registro en Senasoft</div>
-	
-	<h2>Formulario de registro</h2>
+	<div id="e64REusu">Registro en senasoft</div>
+	<div>
+		
+		</ul>
+	</div>
+	<h2>Formulario de registro de instructores</h2>
 	<form action="../Controller/registro.controller.php" method="post">
 		<ul id="ulContRegist">
 			<li><label for="">Tipo de documento</label>
@@ -40,7 +43,7 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 			<li><label for="numDocument">Numero de Documento</label><input type="number" id="numDocument" name="numDocument" required/></li>
 			<li><label for="">Nombre Completo</label><input type="text" id="nameRegist"  name="nameRegist" required/></li>
 			<li><label for="">Apellido Completo</label><input type="text" id="lastRegist"  name="lastRegist" required/></li>
-			<li><label for="">centro</label><input type="text" id="lastRegist"  name="lastRegist" required/></li>
+			<li><label for="">Fecha de nacimiento</label><input type="date" id="bornRegist"  name="bornRegist" required/></li>
 			<li><label for="">Telefono</label><input type="number" id="phoneRegist"  name="phoneRegist"/></li>
 			<li><label for="">Celular</label><input type="number"  id="CelphoneRegist" name="CelphoneRegist"/></li>
 			<li><label for="">Direccion</label><input type="text" id="addressRegist"  name="addressRegist" required/></li>

@@ -30,15 +30,15 @@
 		<div id="captioned-gallery">
 			<figure class="slider">
 				<figure>
-					<img src="Imagen/2S.jpg" alt>
+					<img src="Imagen/SA.jpg" alt>
 					<figcaption>Hobbiton, New Zealand</figcaption>
 				</figure>
 				<figure>
-					<img src="Imagen/1S.jpg" alt>
+					<img src="Imagen/SER.jpg" alt>
 					<figcaption>Wanaka, New Zealand</figcaption>
 				</figure>
 				<figure>
-					<img src="Imagen/2S.jpg" alt>
+					<img src="Imagen/1S.jpg" alt>
 					<figcaption>Hobbiton, New Zealand</figcaption>
 				</figure>
 				<figure>
@@ -84,14 +84,14 @@
 	<li></li>
 	<li></li>
 </ul>
-
+</div>
 <div id="e64Noticia">noticias</div>
 
 <div id="e64ConteNoti">
 	<div id="e64Noticia1"></div>
 	<div id="e64SlideNoticia">
 		
-</body>
+
 	</div>
 </div>
 
