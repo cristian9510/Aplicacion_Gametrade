@@ -100,6 +100,7 @@
 
 <div id="e64ConteNoti">
 	<div id="e64Noticia1"></div>
+	<h4>Estrenos</h4>
 	<div id="e64SlideNoticia">
 		
 

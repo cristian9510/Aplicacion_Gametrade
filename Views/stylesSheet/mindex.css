@@ -142,9 +142,9 @@
 }
 
 #e64Noticia1{
-	width: 100%;
+	width: 100% !important;
 	height: 400px;
-	background: url(../Imagen/diseno/6.png);
+	background: url(../Imagen/diseno/6.png) no-repeat;
 
 }
 
@@ -154,6 +154,14 @@
 	/*background: url(../Imagen/diseno/6.png);*/
 }
 
+
+#e64ConteNoti h4{
+	width: 103%;
+	height: 23px;
+	color: #fff;
+	background: #e8641b;
+	
+}
 #e64Public3{
 	display: inline-block;
 	width: 24%;
