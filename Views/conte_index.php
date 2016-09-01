@@ -16,8 +16,6 @@
 				<input type="file" name="sliderPrincipal"/></br>
 				<button name="action" value="AgregarSlider">Agregar Imagen</button>
 			</form>
-
-			
 		</div>
 
 		<h2>Segunda Seccion</h2>
@@ -44,7 +42,7 @@
 				<button name="action" value="AgregarVideojuegos">Agregar Videojuegos</button>
 			</form>
 		</div>
-		
+
 		<h2>Cuarta Seccion</h2>
 		<div class="e64ContenIndex">
 			<form id="frm5" >

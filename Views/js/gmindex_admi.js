@@ -7,14 +7,19 @@ $("#liCancel").fadeOut();
 cargarforumario();
 
 
-});	
+});
 
-
+/*esto es parte del menu*/
 function cargarforumario(){
+
+  $("#dvMinicio").click(function(){
+  $("#stA_Inicio").load("inicio.php");
+  });
+
  	$("#dvMconsola").click(function(){
  	$("#stA_Consola").load("admin_consola.php");
  	});
-	
+
 	$("#dvMcategor").click(function(){
  	$("#stA_Categoria").load("Categoria_jue.php");
  	});
@@ -39,16 +44,10 @@ function cargarforumario(){
  	$("#dvCiudad").load("ciudad.php");
  	});
 
- 	$("#ciudad").click(function(){
- 	$("#dvCiudad").load("ciudad.php");
+  $("#dvMbonos").click(function(){
+ 	$("#stA_categoriabono").load("admin_categoria_bono.php");
  	});
-
 }
-
-
-
-
-
 
 function sbDisabled(v_var){
 	if (v_var==false) {
@@ -89,16 +88,34 @@ function sbJueAdmi(v_var){
 			$("#liSave").fadeIn();
 			$("#liCancel").fadeIn();
 		break;
-		
+
 	}
 }
 
-
+/*aqui es donde se le da el efecto al menu*/
 function sbMenu(v_var){
 	switch(v_var){
+
+    case "inicio":
+			$("#stMain").fadeOut();
+			$("#stA_Game").fadeOut();
+      $("#stA_User").fadeOut();
+			$("#stA_Consola").fadeOut();
+			$("#stA_Categoriajuego").fadeOut();
+			$("#stA_Puntos").fadeOut();
+			$("#stA_Bono").fadeOut();
+			$("#stA_Encuesta").fadeOut();
+			$("#stA_Sancion").fadeOut();
+			$("#stA_Puntosjue").fadeOut();
+			$("#stA_Inform").fadeOut();
+			$("#stA_nacionalidad").fadeOut();
+			$("#stA_inicio").fadeIn(1000);
+		break;
+
 		case "Usuario":
 			$("#stMain").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Puntos").fadeOut();
@@ -114,6 +131,7 @@ function sbMenu(v_var){
 		case "juegos":
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Puntos").fadeOut();
@@ -130,6 +148,7 @@ function sbMenu(v_var){
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Puntos").fadeOut();
 			$("#stA_Bono").fadeOut();
@@ -139,15 +158,16 @@ function sbMenu(v_var){
 			$("#stA_Inform").fadeOut();
 			$("#stA_nacionalidad").fadeOut();
 			$("#stA_Consola").fadeIn(1000);
-			
-			
-			
+
+
+
 		break;
 
-		case "categoria":
+		case "categoriajuego":
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Puntos").fadeOut();
 			$("#stA_Bono").fadeOut();
@@ -163,6 +183,7 @@ function sbMenu(v_var){
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Bono").fadeOut();
@@ -178,6 +199,7 @@ function sbMenu(v_var){
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Puntos").fadeOut();
@@ -193,6 +215,7 @@ function sbMenu(v_var){
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Bono").fadeOut();
@@ -208,6 +231,7 @@ function sbMenu(v_var){
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Bono").fadeOut();
@@ -218,11 +242,12 @@ function sbMenu(v_var){
 			$("#stA_nacionalidad").fadeOut();
 			$("#stA_Sancion").fadeIn(1000);
 		break;
-		
+
 		case "punt_juego":
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Bono").fadeOut();
@@ -233,11 +258,12 @@ function sbMenu(v_var){
 			$("#stA_nacionalidad").fadeOut();
 			$("#stA_Puntosjue").fadeIn(1000);
 		break;
-		
+
 		case "nacionalidad":
 			$("#stMain").fadeOut();
 			$("#stA_User").fadeOut();
 			$("#stA_Game").fadeOut();
+      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Bono").fadeOut();
@@ -245,12 +271,25 @@ function sbMenu(v_var){
 			$("#stA_Encuesta").fadeOut();
 			$("#stA_Sancion").fadeOut();
 			$("#stA_Puntosjue").fadeOut();
-			//$("#stA_nacionalidad").fadeOut();
 			$("#stA_nacionalidad").fadeIn(1000);
 		break;
+
+    case "categoriabono":
+    $("#stMain").fadeOut();
+    $("#stA_User").fadeOut();
+    $("#stA_Game").fadeOut();
+    $("#stA_inicio").fadeOut();
+    $("#stA_Consola").fadeOut();
+    $("#stA_Categoria").fadeOut();
+    $("#stA_Bono").fadeOut();
+    $("#stA_Puntos").fadeOut();
+    $("#stA_Encuesta").fadeOut();
+    $("#stA_Sancion").fadeOut();
+    $("#stA_Puntosjue").fadeOut();
+    $("#stA_categoriabono").fadeIn(1000);
+      break;
 	}
 }
-
 
 function destroy(){
 	$("#logn").load("destroySes.Controller.php");

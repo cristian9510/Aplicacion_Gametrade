@@ -1,4 +1,7 @@
-
+*{
+	padding: 0;
+	margin: 0;
+}
 #art_left_admin{
 
 	vertical-align: top;
@@ -156,6 +159,21 @@ h1{
 .usa>h1{
 	color: black;
 	text-align: center;
+}
+
+/*este es para modificar bono wilton*/
+.fondo h1{
+	color: black;
+
+}
+
+.fondo{
+	background-image: url(../Imagen/wiltonfondobono.PNG);
+	width: 100%;
+	height: 100%;
+	color: #fffff;
+	position: fixed;
+
 }
 
 >>>>>>> origin/master

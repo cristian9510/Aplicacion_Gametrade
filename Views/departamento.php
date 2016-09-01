@@ -31,8 +31,6 @@ $pais = Gestion_Pais::cargarpais();
 		</select>
 
 		<br><br>
- 
- 
 
 		<button name="action" value="guardardepartamento">enviar</button>
 

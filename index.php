@@ -1,5 +1,4 @@
 <?php
-
 //include("controllers/config.php");
 if(isset($_GET['url'])){
 
@@ -27,7 +26,4 @@ switch($v_params[0]){
 
 
 }
-
-
-
 ?>

@@ -3,6 +3,7 @@
 class bono{
   function guardar($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant){
     $pdo = ConexionBD::AbrirBD();
+
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
     $sql="INSERT INTO tb_bono(cat_bono_cod,pto_cod,bono_desc,bono_cant) values(?,?,?,?)";
@@ -13,7 +14,7 @@ class bono{
     ConexionBD::DesconectarBD();
 
   }
-//se hace la consulta a la tabla para mostrar datos
+
   function mostrar_bono(){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -94,9 +95,5 @@ class bono{
 
 		return $result;
 	}
-
-
-
 }
-
   ?>

@@ -23,7 +23,6 @@ $bono= bono::mostrar_bono();
 <div class="formulario">
 <!--aqui esta el formato y de esta de esta forma se hace -->
   <form action="../Controller/bono.controller.php" method="post">
-    <br>
     <label>Código de categoria de bono: </label>
 
     <select id="cat_bono_cod" name="cat_bono_cod" required>
@@ -64,11 +63,11 @@ $bono= bono::mostrar_bono();
   </form>
 </div>
 
-<!--estes es el proceso pra que aparesca y se pueda mostrar-->
+<!--estes es el proceso para que aparesca y se pueda mostrar-->
 <div class="tablabono">
   <table border="1px">
     <thead>
-      <th colspan="5">Informacion de bonos</th>
+      <th colspan="6">Informacion de bonos</th>
       <tr>
         <td>Codigo</td>
         <td>Codigo caterogia bono</td>

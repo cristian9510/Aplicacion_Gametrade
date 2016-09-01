@@ -6,8 +6,8 @@
 			<div>
 
 			<ul id="Login">
-				<li id="dvCode"><input type="text" placeholder="Nick" name="txtCode" id="txtUsua" required="required"/></li>
-				<li><input type="password" placeholder="*************" name="txtName" id="txtPass" required="required" /></li>
+				<li id="dvCode"><input type="text" placeholder="Nick" name="txtCode" id="txtUsua" required/></li>
+				<li><input type="password" placeholder="*************" name="txtName" id="txtPass" required /></li>
 			</ul>
 			<div id="dvButonL" onclick="ConsultUsu();"><button  name="btnusu" id="btnOpen" value="ingresoUsu"></button></div>
 			</div>

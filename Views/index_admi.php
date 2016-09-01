@@ -18,10 +18,7 @@ if ($MCjuego[0]=="") {
 }else{
 	$code=$MCjuego["jue_cod"]+1;
 }
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -32,8 +29,8 @@ if ($MCjuego[0]=="") {
 	<link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css"/>
 	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/gmindex_admi.js"></script>
-
 </head>
+
 <body>
 <?php include("header_admi.php");?>
 
@@ -41,31 +38,31 @@ if ($MCjuego[0]=="") {
 	<div id="dvPhoto"><?php echo $_SESSION['photoUsu']; ?></div>
 	<div id="dvWelcome">BIENVENIDO</div>
 	<div id="dvAdm"><?php echo $_SESSION['usu_nom']; ?></div>
-
-
-
 </section>
+<!--aqui va a ir el farmulario de usuario-->
 <section id="stA_User">
-usuario
+ <center>usuario<center>
 </section>
 
 <section id="stA_Game">
+
 	<article id="artLeftjuego">
+
 		<div id="dvSeach">
 			<input id="txtSeach" placeholder="Buscar juego" type="text"/>
 			<div id="logSeach"></div>
 		</div>
+
 		<select id="cbCargajue" size="25">
 			<?php
-
 				foreach ($Mjuego as $juego) {
 					echo "<option value=".$juego["jue_cod"].">".$juego["jue_nom"]."</option>";
 				}
-
 			?>
-
 		</select>
+
 	</article>
+
 	<article id="artCenterjuego">
 		<h2>Juegos</h2>
 		<div id="dvCont">
@@ -126,10 +123,14 @@ usuario
 	</article>
 </section>
 
-<section id="stA_Consola">
+<!--aqui comiensa la parte del menu-->
+<section id="stA_Inicio">
 
 </section>
 
+<section id="stA_Consola">
+
+</section>
 
 <section id="stA_Categoria">
 
@@ -143,7 +144,9 @@ usuario
 
 </section>
 
+<section id="stA_categoriabono">
 
+</section>
 
 <section id="stA_Encuesta">
 
@@ -152,7 +155,6 @@ usuario
 <section id="stA_Sancion">
 
 </section>
-
 
 <section id="stA_Puntosjue">
 
