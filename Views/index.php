@@ -30,15 +30,26 @@
 		<div id="captioned-gallery">
 			<figure class="slider">
 				<figure>
-					<img src="Imagen/2S.jpg" alt>
+					<img src="Imagen/SA.jpg" alt>
 					<figcaption>Hobbiton, New Zealand</figcaption>
 				</figure>
 				<figure>
-					<img src="Imagen/1S.jpg" alt>
+					<img src="Imagen/SER.jpg" alt>
 					<figcaption>Wanaka, New Zealand</figcaption>
 				</figure>
+
+                <figure>
+					<img src="Imagen/mar.jpg" alt>
+					<figcaption>Wanaka, New Zealand</figcaption>
+				</figure>
+
 				<figure>
-					<img src="Imagen/2S.jpg" alt>
+					<img src="Imagen/va.jpg" alt>
+					<figcaption>Wanaka, New Zealand</figcaption>
+				</figure>
+
+				<figure>
+					<img src="Imagen/1S.jpg" alt>
 					<figcaption>Hobbiton, New Zealand</figcaption>
 				</figure>
 				<figure>
@@ -53,7 +64,7 @@
 		</div>
 	</div>
 	<div id="e64Video">
-		<iframe width="950" height="400" src="https://www.youtube.com/embed/pRQk4K-UbaU" frameborder="0" allowfullscreen></iframe>
+		<iframe width="950" height="400" src="https://www.youtube.com/watch?v=LzUYvgtvSoY" frameborder="0" allowfullscreen></iframe>
 	</div>
 
 	<div id="e64ContePublic">
@@ -62,29 +73,37 @@
 	</div>
 
 
-<div id="e63JueDestac">VideosJuegos mas descatados</div>
+<div id="e63JueDestac">VideosJuegos Mas Destacados</div>
 <ul id="ulNoticJue">
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-</ul>
-<ul id="ulNoticJue">
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-</ul>
+	<li id="juego"></li>
+	<li id="juegos"></li>
+	<li id="jueg"></li>
+	<li id="jue"></li>
+	<li id="ju"></li>
 
+
+	<li id="videos"></li>
+	<li id="video"></li>
+	<li id="vide"></li>
+	<li id="vid"></li>
+	<li id="vi"></li>
+</ul>
+<ul id="ulNoticJue">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+</div>
 <div id="e64Noticia">noticias</div>
 
 <div id="e64ConteNoti">
 	<div id="e64Noticia1"></div>
+	<h4>Estrenos</h4>
 	<div id="e64SlideNoticia">
 		
-</body>
+
 	</div>
 </div>
 

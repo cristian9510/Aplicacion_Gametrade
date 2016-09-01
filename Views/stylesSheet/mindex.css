@@ -35,10 +35,10 @@
 }
 
 #e64Public1{
-	background: url(../Imagen/diseno/publicidad1.gif);
+	background: url(../Imagen/diseno/1.png);
 }
 #e64Public2{
-	background: url(../Imagen/diseno/publicidad2.gif);
+	background: url(../Imagen/diseno/2.png);
 }
 
 
@@ -69,7 +69,56 @@
 	overflow: hidden;
 	float: left;
 	margin-left: 10px;
-	background: url(../Imagen/diseno/4.png);
+	
+}
+#juego{
+	background: url(../Imagen/diseno/8.png);
+}
+
+
+#juegos{
+     background: url(../Imagen/diseno/9.png);
+}
+
+
+
+#jueg{
+     background: url(../Imagen/diseno/4.png);
+}
+
+
+#jue{
+     background: url(../Imagen/diseno/10.png);
+}
+
+
+#ju{
+     background: url(../Imagen/diseno/11.png);
+}
+
+
+#videos{
+     background: url(../Imagen/diseno/12.png);
+}
+
+
+
+#video{
+     background: url(../Imagen/diseno/13.png);
+}
+
+#vide{
+     background: url(../Imagen/diseno/14.png);
+}
+
+
+#vid{
+     background: url(../Imagen/diseno/15.png);
+}
+
+
+#vi{
+     background: url(../Imagen/diseno/16.png);
 }
 
 
@@ -78,7 +127,7 @@
 	height: 63px;
 	background: #e8641b;
 	font-size: 40px;
-	padding-left: 10px;
+	padding-left: 30px !important;
 	padding-top: 5px;
 	color: #fff;	
 }
@@ -89,12 +138,14 @@
 	display: inline-block;
 	background: #000;
 	overflow: hidden;
+	margin-top: -200px;
 }
 
 #e64Noticia1{
-	width: 100%;
+	width: 100% !important;
 	height: 400px;
-	background: url(../Imagen/diseno/5.png);
+	background: url(../Imagen/diseno/6.png) no-repeat;
+
 }
 
 #e64SlideNoticia{
@@ -103,6 +154,14 @@
 	/*background: url(../Imagen/diseno/6.png);*/
 }
 
+
+#e64ConteNoti h4{
+	width: 103%;
+	height: 23px;
+	color: #fff;
+	background: #e8641b;
+	
+}
 #e64Public3{
 	display: inline-block;
 	width: 24%;
@@ -110,6 +169,7 @@
 	background: url(../Imagen/diseno/7.png);
 	overflow: hidden;
 	vertical-align: top;
+	margin-top: -200px;
 }
 
 

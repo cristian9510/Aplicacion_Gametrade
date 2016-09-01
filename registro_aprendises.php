@@ -1,8 +1,8 @@
 <?php
 require_once("../Model/conexion.php");
-include("../Model/ciudad.class.php");
+include("../Model/registro.class.php");
 
-$ciudad=Gestion_Ciudad::cargarciudad();
+$registro=Gestion_registro::cargarregistro();
 
 ?>
 
@@ -22,11 +22,19 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 <body>
 
 	<div id="dv_main">
-	<?php require_once("header.php"); ?>
-<div id="e64ContRegist">
-	<div id="e64REusu">Registro en Senasoft</div>
 	
-	<h2>Formulario de registro</h2>
+<div id="e64ContRegist">
+	<div id="e64REusu">Registro en Gametrade</div>
+	<div>
+		<h2>¿Por </h2>
+		<ul id="textUsu">
+			<li>Es gratuito</li>
+			<li>Participa en nuestros sorteos y concursos</li>
+			<li>Enterate de quienes an sido los ultimos ganadores</li>
+			<li>Y muchos mas...</li>
+		</ul>
+	</div>
+	<h2>Registro De Senasoft</h2>
 	<form action="../Controller/registro.controller.php" method="post">
 		<ul id="ulContRegist">
 			<li><label for="">Tipo de documento</label>
@@ -40,7 +48,9 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 			<li><label for="numDocument">Numero de Documento</label><input type="number" id="numDocument" name="numDocument" required/></li>
 			<li><label for="">Nombre Completo</label><input type="text" id="nameRegist"  name="nameRegist" required/></li>
 			<li><label for="">Apellido Completo</label><input type="text" id="lastRegist"  name="lastRegist" required/></li>
-			<li><label for="">centro</label><input type="text" id="lastRegist"  name="lastRegist" required/></li>
+			
+			<li><label for="">categoria</label><input type="text" id="lastRegist"  name="lastRegist" required/></li>
+			<li><label for="">Fecha de nacimiento</label><input type="date" id="bornRegist"  name="bornRegist" required/></li>
 			<li><label for="">Telefono</label><input type="number" id="phoneRegist"  name="phoneRegist"/></li>
 			<li><label for="">Celular</label><input type="number"  id="CelphoneRegist" name="CelphoneRegist"/></li>
 			<li><label for="">Direccion</label><input type="text" id="addressRegist"  name="addressRegist" required/></li>
