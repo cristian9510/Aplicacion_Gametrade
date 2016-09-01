@@ -49,6 +49,10 @@ $cat_bono= categoria_bono::mostrar_categoria_bono();
                   <td>".$cb["cat_bono_cod"]."</td>
                   <td>".$cb["cat_bono_nom"]."</td>
                   <td>".$cb["cat_bono_fech"]."</td>
+                  <td>
+                    <a href='modificarbono.php?codigo_bono=".$bn["bono_cod"]."'>Modificar</a>
+                  </td>
+
           </tr>";
         }
        ?>

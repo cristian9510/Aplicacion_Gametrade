@@ -7,7 +7,7 @@
 
 			<ul id="Login">
 				<li id="dvCode"><input type="text" placeholder="Nick" name="txtCode" id="txtUsua" required/></li>
-				<li><input type="password" placeholder="*************" name="txtName" id="txtPass" required /></li>
+				<li><input type="password" placeholder="**********" name="txtName" id="txtPass" required /></li>
 			</ul>
 			<div id="dvButonL" onclick="ConsultUsu();"><button  name="btnusu" id="btnOpen" value="ingresoUsu"></button></div>
 			</div>
@@ -25,15 +25,6 @@
 	<li id="licontact" onclick="sb_menu('contact')"></li>
 	<li id="liUsa" onclick="sb_menu('usa')"></li>
 </ul>
-<!--<nav>
-	<ul id="ulMenu">
-		<li>Inicio</li>
-		<li>Quienes Somos</li>
-		<li>Contactenos</li>
-		<li>Como se usa</li>
-	</ul>
-</nav>-->
-
 
 <div id="e64ConteContra">
 		<div id="e64Contras">

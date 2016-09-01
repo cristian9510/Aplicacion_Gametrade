@@ -1,6 +1,4 @@
-
-
-
+<!--este es para el formulario de juego-->
 
 function sbJueAdmi(v_var){
 	switch(v_var){
@@ -13,7 +11,7 @@ function sbJueAdmi(v_var){
 		case "2":
 			sbDisabled(true);
 			$("#txtUsuario").focus();
-		break;	
+		break;
 	}
 }
 

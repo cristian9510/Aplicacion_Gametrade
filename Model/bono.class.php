@@ -95,5 +95,18 @@ class bono{
 
 		return $result;
 	}
+  public static function eliminar_bono($codigo){
+    try {
+      $pdo = ConexionBD::AbrirBD();
+
+      $sql = "DELETE FROM tb_bono WHERE bono_cod = ?";
+      $query = $pdo->prepare($sql);
+      $query->execute(array($codigo));
+
+    } catch (Exception $e) {
+      echo "Error" . $e->getMessage();
+    }
+
+  }
 }
   ?>

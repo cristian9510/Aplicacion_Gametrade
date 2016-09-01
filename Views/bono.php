@@ -74,23 +74,26 @@ $bono= bono::mostrar_bono();
         <td>Codigo punto</td>
         <td>Descripcion</td>
         <td>Cantidad</td>
-        <td>modificar</td>
+        <td>Operaciones</td>
       </tr>
     </thead>
     <tbody>
-        <?php
-          foreach ($bono as $bn) {
-            echo "<tr>
-                    <td>".$bn["bono_cod"]."</td>
-                    <td>".$bn["cat_bono_cod"]."</td>
-                    <td>".$bn["pto_cod"]."</td>
-                    <td>".$bn["bono_desc"]."</td>
-                    <td>".$bn["bono_cant"]."</td>
-                    <td>
-                      <a href='modificarbono.php?codigo_bono=".$bn["bono_cod"]."'>modificar </td>
-            </tr>";
-          }
-         ?>
+         <?php foreach ($bono as $bn): ?>
+           <tr>
+             <td><?php echo $bn["bono_cod"];    ?></td>
+             <td><?php echo $bn["cat_bono_cod"];?></td>
+             <td><?php echo $bn["pto_cod"];     ?></td>
+             <td><?php echo $bn["bono_desc"];   ?></td>
+             <td><?php echo $bn["bono_cant"];   ?></td>
+             <td>
+               <a href="modificarbono.php?codigo_bono=<?php echo base64_encode($bn["bono_cod"]); ?>">Modificar</a>
+               <a href="../Controller/bono.controller.php?action=eliminar&codigo_bono=<?php echo base64_encode($bn["bono_cod"]); ?>">
+                 <img src="" alt="" />
+               </a>
+             </td>
+           </tr>
+        <?php endforeach ?>
     </tbody>
+
   </table>
 </div>

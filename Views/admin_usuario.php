@@ -12,8 +12,6 @@
 
 	<article id="art_center_admin">
 	<form>
-
-
 	<form action="../Controller/usuario.controller.php" method="post">
 
 		<label for="txtCodigo">codigo  </label><input type="text" name="txtCodigo"/> <br><br>
@@ -31,16 +29,10 @@
 		<label for="txtCiudad">ciudad  </label><input type="text" name="txtCiudad" /><br><br>
 
 		<label for="txtPuntos">puntos </label><input type="text" name="txtPuntos" /><br><br>
-
-
 		<button name="action" value="guardarusuario">enviar</button>
 
-		
+
 	</form>
 	</article>
-
-
-
-
 </body>
 </html>

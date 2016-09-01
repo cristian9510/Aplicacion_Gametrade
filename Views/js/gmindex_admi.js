@@ -6,7 +6,6 @@ $("#liCancel").fadeOut();
 
 cargarforumario();
 
-
 });
 
 /*esto es parte del menu*/
@@ -97,7 +96,6 @@ function sbMenu(v_var){
 	switch(v_var){
 
     case "inicio":
-			$("#stMain").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_User").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -109,13 +107,12 @@ function sbMenu(v_var){
 			$("#stA_Puntosjue").fadeOut();
 			$("#stA_Inform").fadeOut();
 			$("#stA_nacionalidad").fadeOut();
-			$("#stA_inicio").fadeIn(1000);
+			$("#stMain").fadeIn(1000);
 		break;
 
 		case "Usuario":
 			$("#stMain").fadeOut();
 			$("#stA_Game").fadeOut();
-      $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
 			$("#stA_Puntos").fadeOut();
@@ -208,6 +205,7 @@ function sbMenu(v_var){
 			$("#stA_Puntosjue").fadeOut();
 			$("#stA_Inform").fadeOut();
 			$("#stA_nacionalidad").fadeOut();
+      $("#stA_categoriabono").fadeOut();
 			$("#stA_Bono").fadeIn(1000);
 		break;
 

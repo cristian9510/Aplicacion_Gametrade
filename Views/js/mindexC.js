@@ -1,10 +1,10 @@
+<!--este es para el efecto de antes de loguiarse-->
+
+
 $(document).ready(function() {
 CargarSlider();
 
 });
-
-
-
 
 
 function CargarSlider(){

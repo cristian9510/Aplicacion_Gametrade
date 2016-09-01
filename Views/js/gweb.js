@@ -1,3 +1,5 @@
+<!--este es el menu que esta antes de loguiarce-->
+
 function sb_menu(vVar){
 	switch(vVar){
 		case "home":
@@ -60,18 +62,18 @@ function ConsultUsu(){
 				if (ajax.readyState==4){
 
 					if (ajax.status == 200) {
-						
+
 						v_temp= ajax.responseText;
 
 						try{
 							jo_user=eval(v_temp);
 						}
 						catch(e){
-							alert("Datos no validos");						
+							alert("Datos no validos");
 							return;
 						}
 						if (jo_user['st']=="ok"){
-							
+
 							self.location.href="userperfil.php";
 						}else{
 							alert(00000);
@@ -101,14 +103,14 @@ function sbConsultar(v_Contr){
 				if (ajax.readyState==4){
 
 					if (ajax.status == 200) {
-						
+
 						v_temp= ajax.responseText;
 
 						try{
 							jo_user=eval(v_temp);
 						}
 						catch(e){
-							alert("Lo sentimos, No se encuentra en nuestra base de datos, lo invitamos a Registrarse");						
+							alert("Lo sentimos, No se encuentra en nuestra base de datos, lo invitamos a Registrarse");
 							$("#e64ConteContra").fadeOut();
 							return;
 						}
@@ -129,16 +131,16 @@ function sbConsultar(v_Contr){
 		 				NumC=$("#txtBuscarContra").val();
 		 				nuevaC=$("#txtNContr").val();
 		 				ConfirContra=$("#txtConfirContr").val();
-		 				
+
 		 				if (nuevaC=="" || ConfirContra=="") {
 		 					alert("Debes introducir tu clave en los dos campos");
 		 				}
 
 		 				if (nuevaC != ConfirContra) {
-		 				
+
 		 					alert("La contraseña no conciden, verifica e intenta de nuevo");
-		 				
-		 				}else{				
+
+		 				}else{
 
 	 		 				vsaveC="GuardarContra";
 
@@ -147,11 +149,11 @@ function sbConsultar(v_Contr){
 							ajax.send(v_temp);
 
 							ajax.onreadystatechange=function(){
-							
+
 							if (ajax.readyState==4){
 
 								if (ajax.status == 200) {
-							
+
 									v_temp= ajax.responseText;
 
 							try{

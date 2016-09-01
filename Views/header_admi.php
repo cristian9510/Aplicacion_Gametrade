@@ -1,5 +1,5 @@
 <header>
-	<div id="dvLogo">aaaa</div>
+	<div id="dvLogo"></div>
 	<div id="logn" onclick="destroy()">Cerrar session</div>
 </header>
 <ul id="ulMain">
@@ -10,7 +10,7 @@
 	<li onclick="sbMenu('punto')" id="dvMpuntos">Punto</li>
 	<li onclick="sbMenu('categoriajuego')" id="dvMcategor">Categoria juego</li>
 	<li onclick="sbMenu('juegos')" id="dvMgame">Juego</li>
-	<li onclick="sbMenu('categoriabono')" id="dvMbonos">Categoria bono</li>
 	<li onclick="sbMenu('bono')" id="dvMbono">Bono</li>
+	<li onclick="sbMenu('categoriabono')" id="dvMbonos">Categoria bono</li>
 	<li onclick="sbMenu('encuesta')" id="dvMencuesta">Encuesta</li>
 </ul>

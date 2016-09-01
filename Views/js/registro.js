@@ -1,4 +1,6 @@
-$(document).ready(function() { 
+<!-registrar usuario--->
+
+$(document).ready(function() {
 
 });
 
@@ -37,7 +39,7 @@ var ajax=fn_httpservice();
 				if (ajax.readyState==4){
 
 					if (ajax.status == 200) {
-						
+
 						v_temp= ajax.responseText;
 
 						try{
@@ -48,7 +50,7 @@ var ajax=fn_httpservice();
 							return;
 						}
 						if (jo_user['st']=="ok"){
-							
+
 							self.location.href="index.php";
 						}
 						}

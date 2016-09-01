@@ -1,3 +1,5 @@
+/*este es el estilo del formulario que sube la informacion al index no inclulle el menu*/
+
 h2{
 	text-align: center;
 }
@@ -16,7 +18,7 @@ h2{
 
 label{
 	font-size: 20px;
-	margin-top:20px; 
+	margin-top:20px;
 }
 
 input{

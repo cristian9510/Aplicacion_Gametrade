@@ -2,7 +2,7 @@
 require_once("../Model/conexion.php");
 require_once("../Model/bono.class.php");
 
-$bonomo = bono::consultarporCodigo($_GET["codigo_bono"]);
+$bonomo = bono::consultarporCodigo(base64_decode($_GET["codigo_bono"]));
 
 ?>
 
