@@ -8,19 +8,12 @@ require_once("../Model/bono.class.php");
 $cat_bono_cod=bono::mostrarCategoriabono();
 $pto_cod=bono::mostrarpunto();
 $bono= bono::mostrar_bono();
-
-//este es para modificar bono
-//$intento= bono::modificar();
 ?>
 
-
-<!--espacio del titulo titulo-->
 <meta charset="utf-8">
-<div class="titulo_bono">
-  <h1>Bono</h1>
-</div>
 <!--contenedor del formulario-->
-<div class="formulario">
+<div class="formulariobono">
+  <h1>Bono</h1>
 <!--aqui esta el formato y de esta de esta forma se hace -->
   <form action="../Controller/bono.controller.php" method="post">
     <label>Código de categoria de bono: </label>
@@ -87,13 +80,11 @@ $bono= bono::mostrar_bono();
              <td><?php echo $bn["bono_cant"];   ?></td>
              <td>
                <a href="modificarbono.php?codigo_bono=<?php echo base64_encode($bn["bono_cod"]); ?>">Modificar</a>
-               <a href="../Controller/bono.controller.php?action=eliminar&codigo_bono=<?php echo base64_encode($bn["bono_cod"]); ?>">
-                 <img src="" alt="" />
-               </a>
+
+               <a href="../Controller/bono.controller.php?action=eliminar&codigo_bono=<?php echo base64_encode($bn["bono_cod"]); ?>">Eliminar</a>
              </td>
            </tr>
         <?php endforeach ?>
     </tbody>
-
   </table>
 </div>

@@ -1,7 +1,7 @@
 <!--aqui recojemos los datos y los llevamos a la base de datos-->
 <?php
 class bono{
-  function guardar($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant){
+  public static function guardar($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant){
     $pdo = ConexionBD::AbrirBD();
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -15,7 +15,7 @@ class bono{
 
   }
 
-  function mostrar_bono(){
+  public static function mostrar_bono(){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
@@ -32,7 +32,7 @@ class bono{
 
   }
 
-  function consultarporCodigo($codigo){
+  public static function consultarporCodigo($codigo){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
@@ -46,11 +46,9 @@ class bono{
     ConexionBD::DesconectarBD();
 
     return $result;
-
   }
 
-  function modificar($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant,$bono_cod){
-
+  public static function modificar($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant,$bono_cod){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
@@ -60,9 +58,10 @@ class bono{
 
     ConexionBD::DesconectarBD();
 
+    return $result;
   }
 
-  function mostrarCategoriabono(){
+  public static function mostrarCategoriabono(){
 
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -79,7 +78,7 @@ class bono{
 		return $result;
 	}
 
-  function mostrarpunto(){
+  public static function mostrarpunto(){
 
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -95,6 +94,7 @@ class bono{
 
 		return $result;
 	}
+
   public static function eliminar_bono($codigo){
     try {
       $pdo = ConexionBD::AbrirBD();
@@ -106,7 +106,6 @@ class bono{
     } catch (Exception $e) {
       echo "Error" . $e->getMessage();
     }
-
   }
 }
   ?>

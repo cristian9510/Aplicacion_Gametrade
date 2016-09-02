@@ -29,7 +29,8 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 	<h2>Formulario de registro</h2>
 	<form action="../Controller/registro.controller.php" method="post">
 		<ul id="ulContRegist">
-			<li><label for="">Tipo de documento</label>
+			<li>
+				<label for="">Tipo de documento</label>
 				<select name="cbTipDocum" id="cbTipDocum">
 					<option value="0">Seleccionar</option>
 					<option value="1">Cedula de Ciudadania</option>
@@ -55,7 +56,7 @@ $ciudad=Gestion_Ciudad::cargarciudad();
 					?>
 				</select>
 			</li>
-			
+
 			<li><div id="enviarR" onclick="enviar()">Registrarme</div></li>
 		</ul>
 	</form>

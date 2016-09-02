@@ -1,9 +1,8 @@
 <?php
-require_once("../Model/conexion.php");
-require_once("../Model/bono.class.php");
+  require_once("../Model/conexion.php");
+  require_once("../Model/bono.class.php");
 
 $bonomo = bono::consultarporCodigo(base64_decode($_GET["codigo_bono"]));
-
 ?>
 
 <!DOCTYPE html>
@@ -17,15 +16,13 @@ $bonomo = bono::consultarporCodigo(base64_decode($_GET["codigo_bono"]));
       <center>
         <div class="fondo">
           <!--est es para doper modificar-->
-          <h1>modificar bono</h1>
+          <h1>Modificar bono</h1>
           <form action="../Controller/bono.controller.php" method="post">
-
-            <label>Código: <?php echo $bonomo["bono_cod"]; ?></label>
             <input type="hidden" name="bono_cod" readonly value="<?php echo $bonomo["bono_cod"]; ?>" />
             </br>
             </br>
             <label>Código de categoria de bono: </label>
-            <input type="text" name="cat_bono_cod" required value="<?php echo $bonomo["cat_bono_cod"]; ?>"/>
+            <input type="text" name="cat_bono_cod"  required value="<?php echo $bonomo["cat_bono_cod"]; ?>"/>
             </br>
             </br>
             <label>Codigo de punto: </label>
