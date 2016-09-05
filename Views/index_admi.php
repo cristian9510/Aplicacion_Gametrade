@@ -28,7 +28,7 @@ require_once("../Model/conexion.php");
 
 </section>
 
-<section id="stA_User">
+<section id="stA_usuario">
 
 </section>
 

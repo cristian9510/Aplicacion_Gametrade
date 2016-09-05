@@ -15,6 +15,10 @@ function cargarforumario(){
   $("#stA_Inicio").load("inicio.php");
   });
 
+  $("#dvMusuario").click(function(){
+ 	$("#stA_usuario").load("admin_usuario.php");
+ 	});
+
  	$("#dvMconsola").click(function(){
  	$("#stA_Consola").load("admin_consola.php");
  	});
@@ -97,7 +101,7 @@ function sbMenu(v_var){
 
     case "inicio":
 			$("#stA_Game").fadeOut();
-      $("#stA_User").fadeOut();
+      $("#stA_usuario").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoriajuego").fadeOut();
 			$("#stA_Puntos").fadeOut();
@@ -110,7 +114,7 @@ function sbMenu(v_var){
 			$("#stMain").fadeIn(1000);
 		break;
 
-		case "Usuario":
+		case "usuario":
 			$("#stMain").fadeOut();
 			$("#stA_Game").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -122,12 +126,12 @@ function sbMenu(v_var){
 			$("#stA_Puntosjue").fadeOut();
 			$("#stA_Inform").fadeOut();
 			$("#stA_nacionalidad").fadeOut();
-			$("#stA_User").fadeIn(1000);
+			$("#stA_usuario").fadeIn(1000);
 		break;
 
 		case "juegos":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
 			$("#stA_Categoria").fadeOut();
@@ -143,7 +147,7 @@ function sbMenu(v_var){
 
 		case "consola":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Categoria").fadeOut();
@@ -155,14 +159,11 @@ function sbMenu(v_var){
 			$("#stA_Inform").fadeOut();
 			$("#stA_nacionalidad").fadeOut();
 			$("#stA_Consola").fadeIn(1000);
-
-
-
 		break;
 
 		case "categoriajuego":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -178,7 +179,7 @@ function sbMenu(v_var){
 
 		case "punto":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -194,7 +195,7 @@ function sbMenu(v_var){
 
 		case "bono":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -211,7 +212,7 @@ function sbMenu(v_var){
 
 		case "encuesta":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -227,7 +228,7 @@ function sbMenu(v_var){
 
 		case "sancion":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -243,7 +244,7 @@ function sbMenu(v_var){
 
 		case "punt_juego":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -259,7 +260,7 @@ function sbMenu(v_var){
 
 		case "nacionalidad":
 			$("#stMain").fadeOut();
-			$("#stA_User").fadeOut();
+			$("#stA_usuario").fadeOut();
 			$("#stA_Game").fadeOut();
       $("#stA_inicio").fadeOut();
 			$("#stA_Consola").fadeOut();
@@ -274,7 +275,7 @@ function sbMenu(v_var){
 
     case "categoriabono":
     $("#stMain").fadeOut();
-    $("#stA_User").fadeOut();
+    $("#stA_usuario").fadeOut();
     $("#stA_Game").fadeOut();
     $("#stA_inicio").fadeOut();
     $("#stA_Consola").fadeOut();

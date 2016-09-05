@@ -1,5 +1,4 @@
-<!--este es para que pueda mostrar los datos de esta tabla en internet.
-este es una conexion por haci desirlo-->
+<!--este es una conexion por haci desirlo-->
 <?php
 require_once("../Model/coneXion.php");
 require_once("../Model/bono.class.php");

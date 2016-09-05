@@ -4,7 +4,7 @@
 </header>
 <ul id="ulMain">
 	<li onclick="sbMenu('inicio')" id="dvMinicio">Inicio</li>
-	<li onclick="sbMenu('Usuario')" id="dvMusu">Usuario</li>
+	<li onclick="sbMenu('usuario')" id="dvMusuario">Usuario</li>
 	<li onclick="sbMenu('nacionalidad')" id="dvMnacionalidad">Nacionalidad</li>
 	<li onclick="sbMenu('consola')" id="dvMconsola">Consola</li>
 	<li onclick="sbMenu('punto')" id="dvMpuntos">Punto</li>
