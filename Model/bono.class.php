@@ -57,12 +57,9 @@ class bono{
     $query->execute(array($cat_bono_cod,$pto_cod,$bono_desc,$bono_cant,$bono_cod));
 
     ConexionBD::DesconectarBD();
-
-    return $result;
   }
 
   public static function mostrarCategoriabono(){
-
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

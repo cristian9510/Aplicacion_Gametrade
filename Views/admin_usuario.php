@@ -1,6 +1,9 @@
 <?php
   require_once("../Model/coneXion.php");
+  require_once("../Model/usuario.class.php");
 
+  $ciu = usuario::consultarciudad();
+  date_default_timezone_set('America/Bogota');
  ?>
 
 <!DOCTYPE html>
@@ -10,8 +13,9 @@
 		<title></title>
 	</head>
 	<body>
+    <h2>Consultar usuario</h2>
 		<div class="formulariousuario">
-      <h1>Registrar usuario.</h1>
+      <h1><a href="consultar_usuarios.php">Consultar usuario</a></h1>
 
 			<form action="../Controller/usuario.controller.php" method="post">
 
@@ -36,11 +40,11 @@
 				<input type="text" name="usu_apell"/>
 				<br><br>
 
-				<label>Nick de usuario </label>
+				<label>Nick de usuario: </label>
 				<input type="text" name="usu_nick"/>
 				<br><br>
 
-				<label>Correo electronico </label>
+				<label>Correo electronico: </label>
 				<input type="text" name="usu_mail"/>
 				<br><br>
 
@@ -69,33 +73,24 @@
 				<input type="number" name="usu_cel" />
 				<br><br>
 
-        <!-- <label>Ciudad: </label>
+        <label>Ciudad: </label>
 				<select id="ciu_cod" name="ciu_cod">
-		      //<?php
-		        //echo "<option>Seleccione</option>";
-		          //foreach ($ciu as $ciudad) {
-		            //echo "<option value=".$ciudad["ciu_cod"].">".$ciudad["ciu_nom"]."</option>";
+		      <?php
+		        echo "<option>Seleccione</option>";
+		          foreach ($ciu as $ciudad) {
+		            echo "<option value=".$ciudad["ciu_cod"].">".$ciudad["ciu_nom"]."</option>";
 		        }
 		       ?>
         </select>
-        <br><br> -->
+        <br><br>
 
 				<label>Dirreccion: </label>
 				<input type="text" name="usu_dir" />
 				<br><br>
+        <!-- fecha -->
+				<input type="hidden" name="usu_fech" readonly="" value="<?php echo date('d/m/Y')?>"/>
 
-				<label>Fecha de creacion del usuario: </label>
-				<input type="date" name="usu_fech" />
-				<br><br>
-
-				<label>Estado</label>
-				<select id="estado" name="usu_estado">
-					<option value="0">Seleccionar</option>
-					<option value="1">Activo</option>
-					<option value="2">Inactivo</option>
-        </select>
-				<br><br>
-        <button type="submit" name="guardarusuario">Aceptar</button>
+        <button type="submit" name="action" value="guardarusuario">Aceptar</button>
 			</form>
 		</div>
 	</body>

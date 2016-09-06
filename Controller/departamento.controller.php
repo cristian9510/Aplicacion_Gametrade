@@ -3,23 +3,20 @@ require_once("../Model/conexion.php");
 require_once("../Model/departamento.class.php");
 
 $accion=$_REQUEST["action"];
+
  switch ($accion) {
+
  	case 'guardardepartamento':
- 		 $cod_departamento=$_POST["txtCodigo"];
- 		 $departamento_nombre=$_POST["txtName"];
- 		 $codigo_pais=$_POST["txtPais"];
- 		
- 		
+ 		 $depar_nom=$_POST["depar_nom"];
+ 		 $pais_cod=$_POST["pais_cod"];
+
+
  		 try {
- 		 	Gestion_Departamento::Guardar($cod_departamento,$departamento_nombre, $codigo_pais);
+ 		 	Gestion_Departamento::guardar($depar_nom,$pais_cod);
  		 	echo "Guardar con exito";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }
- 		break;
- 	
- 	default:
- 		# code...
  		break;
  }
 

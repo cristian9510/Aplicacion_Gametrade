@@ -1,51 +1,28 @@
-<link rel="stylesheet" type="text/css" href="../stylesSheet/estilo.css">
 <?php
+	require_once("../Model/coneXion.php");
+	require_once("../Model/ciudad.class.php");
 
-require_once("../model/conexion.php");
-require_once("../model/ciudad.class.php");
+	$departamento=Gestion_Ciudad::mostrardepartamento();
+	?>
 
-$ciudad = Gestion_Ciudad::cargardepartamento();
-
-?>
 <meta charset="utf-8">
-<div id="cua">
-<h1 style="color:black">CIUDAD</h1>
-</div>
-<section>
-	<article id="admin_consola">
-
+<div class="formulariociudad">
 		<form action="../Controller/ciudad.controller.php" method="post">
+			<label>Ciudad: </label>
+			<input type="text" name="ciu_nom" />
+			<br><br>
 
+			<label>departamento: </label>
+	    <select id="depar_cod" name="depar_cod" required>
+	      <?php
+	        echo "<option>Seleccione</option>";
+	          foreach ($departamento as $depar) {
+	            echo "<option value=".$depar["depar_cod"].">".$depar["depar_nom"]."</option>";
+	        }
+	       ?>
+	     </select>
+			 <br><br>
 
-
-		<label for="txtCiudad">codigo de la ciudad </label><input type="text" name="txtCiudad" /><br><br>
-
-		
-
-		<label for="txtName">nombre de la ciudad </label><input type="text" name="txtName" /><br><br>
-
-		    
-             
-
-		<label for="txtCodigo">Nombre departamento</label>
-
-
-		<select name="txtCodigo">
-		<option>Seleccionar</option>
-		<?php
-		foreach ($ciudad as $ciu ) {
-			echo "<option value=".$ciu["depar_cod"].">".$ciu["depar_nom"]."</option>";
-		}
-		?>
-		</select>
-
-		<br><br>
- 
-
-
-		
- 
-
-		<button name="action" value="guardarciudad">enviar</button>
-
-	</article>
+	<button name="action" value="guardarciudad">enviar</button>
+</form>
+</div>

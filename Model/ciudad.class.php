@@ -1,46 +1,27 @@
 <?php
-
-
-class Gestion_Ciudad
-{
-	
-	function guardar($ciu_codigo,$ciu_nombre,$ciu_departamento){
+	class Gestion_Ciudad{
+		public static function guardar($ciu_nom,$depar_cod){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-		$sql= "INSERT INTO tbl_ciudad (ciu_cod,ciu_nom,depar_cod) values (?,?,?)";
+
+		$sql= "INSERT INTO tbl_ciudad (ciu_nom,depar_cod) values (?,?)";
 
 		$query= $pdo->prepare($sql);
-		$query->execute(array($ciu_codigo,$ciu_nombre,$ciu_departamento));
+		$query->execute(array($ciu_nom,$depar_cod));
 
 		ConexionBD::DesconectarBD();
-
 	}
 
-    function cargardepartamento(){
+	public static function mostrardepartamento(){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-		$sql= "SELECT * FROM tbl_departamento";
+
+		$sql= "select * from tbl_departamento";
 
 		$query= $pdo->prepare($sql);
 		$query->execute();
-		$result = $query ->fetchALL(PDO::FETCH_BOTH);
 
-		ConexionBD::DesconectarBD();
-
-		
-	}
-
-	function cargarciudad(){
-		$pdo = ConexionBD::AbrirBD();
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-		$sql= "SELECT * FROM tbl_ciudad";
-
-		$query= $pdo->prepare($sql);
-		$query->execute();
-		$result = $query ->fetchALL(PDO::FETCH_BOTH);
+		$result=$query->fetchALL(PDO::FETCH_BOTH);
 
 		ConexionBD::DesconectarBD();
 

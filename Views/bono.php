@@ -6,7 +6,7 @@ require_once("../Model/bono.class.php");
 //este es para mostrar bono
 $cat_bono_cod=bono::mostrarCategoriabono();
 $pto_cod=bono::mostrarpunto();
-$bono= bono::mostrar_bono();
+$bono=bono::mostrar_bono();
 ?>
 
 <meta charset="utf-8">

@@ -3,24 +3,10 @@
 	<h1>Puntos</h1>
 </div>
 </br>
-<!--<script>
-	function ValidarDatosPOST(){
-		var verificar= true;
-
-		if (!document.formulario_pto.pto_cod_txt.value) {
-			alert("Este campo es requerido");
-			document.formulario_pto.pto_cod_txt.focus();
-			verificar= false;
-		}
-	}
-
-	window.onload = function(){
-		document.getElementById("enviar-post").onclick= ValidarDatosPOST;
-	}
-</script>-->
 
 <div class="formulario_pto">
 	<form class="puntos_frm" action="../Controller/puntos.controller.php" method="post">
+
 		<label>Ingresa código del punto:</label>
 		<input type="text" name="pto_cod_txt" />
 		</br></br>

@@ -1,17 +1,18 @@
 <?php
 	require_once("../model/conexion.php");
 	require_once("../model/departamento.class.php");
-	$pais = Gestion_Pais::cargarpais();
+	$pais = Gestion_Departamento::cargarpais();
 ?>
 
 <meta charset="utf-8">
 <div class="formulariodepartamento" id="admin_consola">
 		<form action="../Controller/departamento.controller.php" method="post">
+
 		<label>Departamento: </label>
 		<input type="text" name="depar_nom"/>
 		<br><br>
 
-		<label>pais: </label>
+		<label>Pais: </label>
 		<select id="pais_cod" name="pais_cod">
 			<option>Seleccionar</option>
 			<?php
