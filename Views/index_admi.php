@@ -40,6 +40,10 @@ require_once("../Model/conexion.php");
 
 </section>
 
+<section id="stA_juego">
+
+</section>
+
 <section id="stA_Puntos">
 
 </section>

@@ -9,7 +9,7 @@
 	<li onclick="sbMenu('consola')" id="dvMconsola">Consola</li>
 	<li onclick="sbMenu('punto')" id="dvMpuntos">Punto</li>
 	<li onclick="sbMenu('categoriajuego')" id="dvMcategor">Categoria juego</li>
-	<li onclick="sbMenu('juegos')" id="dvMgame">Juego</li>
+	<li onclick="sbMenu('juego')" id="dvMjuego">Juego</li>
 	<li onclick="sbMenu('bono')" id="dvMbono">Bono</li>
 	<li onclick="sbMenu('categoriabono')" id="dvMbonos">Categoria bono</li>
 	<li onclick="sbMenu('encuesta')" id="dvMencuesta">Encuesta</li>

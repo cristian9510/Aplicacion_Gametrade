@@ -3,7 +3,7 @@
 require_once("../Model/conexion.php");
 require_once("../Model/puntos.class.php");
 
-$accion=$_REQUEST["action"];    
+$accion=$_REQUEST["action"];
 
   switch ($accion) {
 

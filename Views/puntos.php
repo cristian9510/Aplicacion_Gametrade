@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <!--Título del formulario-->
 <div class="titulo_puntos">
 	<h1>Puntos</h1>
@@ -7,10 +8,7 @@
 <div class="formulario_pto">
 	<form class="puntos_frm" action="../Controller/puntos.controller.php" method="post">
 
-		<label>Ingresa código del punto:</label>
-		<input type="text" name="pto_cod_txt" />
-		</br></br>
-		<label>Ingresa el valor de la moneda:</label>
+		<label>Precio: </label>
 		<input type="text" name="pto_moneda_txt" />
 		</br></br>
 		<label>Descripción:</label>

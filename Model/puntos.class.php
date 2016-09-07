@@ -1,11 +1,11 @@
 <!--Se recojen los datos para envíarlos a la Base de Datos-->
 <?php
 /**
- * 
+ *
  */
  class puntos
  {
- 	
+
  	function guardar($pto_cod, $pto_moneda, $pto_desc)
  	{
  		$pdo = ConexionBD::AbrirBD();
@@ -18,5 +18,5 @@
 
     	ConexionBD::DesconectarBD();
  	}
- } 
+ }
  ?>
