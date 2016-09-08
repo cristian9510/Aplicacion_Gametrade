@@ -11,10 +11,6 @@
     <div class="formulariojuego">
       <h1>juego</h1>
       <form action="../Controller/juego_admin.controller.php" method="post">
-        <label>Codigo de juego: </label>
-        <input type="text" name="pto_cod">
-        <br><br>
-
         <label>Codigo de usuario: </label>
         <input type="text" name="usu_cod">
         <br><br>
@@ -43,7 +39,7 @@
         <input type="text" name="jue_trailer">
         <br><br>
 
-        <input type="hidden" name="usu_fech" readonly="" value="<?php echo date('d/m/Y')?>"/>
+        <input type="hidden" name="jue_fech_public" readonly="" value="<?php echo date('d/m/Y')?>"/>
 
         <label>Imagen del juego: </label>
         <input type="text" name="jue_imagen">

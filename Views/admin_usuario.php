@@ -1,5 +1,5 @@
 <?php
-  require_once("../Model/coneXion.php");
+  require_once("../Model/conexion.php");
   require_once("../Model/usuario.class.php");
 
   $ciu = usuario::consultarciudad();

@@ -1,8 +1,8 @@
 <?php
-require_once("../Model/coneXion.php");
+require_once("../Model/conexion.php");
 require_once("../Model/Categoria_bono.class.php");
-
 $cat_bono= categoria_bono::mostrar_categoria_bono();
+date_default_timezone_set('America/Bogota');
  ?>
 
 <!--contenedor del formulario-->
@@ -10,14 +10,13 @@ $cat_bono= categoria_bono::mostrar_categoria_bono();
   <h1>categoria de bonos</h1>
   <!--aqui esta el formato y de esta de esta forma se hace -->
   <form action="../Controller/categoria_bono.controller.php" method="post">
+
     <label>nombre: </label>
     <input type="text" name="cat_bono_nom">
     <br>
     <br>
-    <label>fecha: </label>
-    <input type="date" name="cat_bono_fech">
-    <br>
-    <br>
+    <!-- fecha -->
+    <input type="hidden" name="cat_bono_fech" value="<?php echo date('d/m/Y')?>"/>
     <!--este es el boton-->
     <button name="action" value="guardar_cat_bono">Guardar</button>
   </form>

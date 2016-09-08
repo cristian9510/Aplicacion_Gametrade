@@ -4,31 +4,26 @@ require_once("../Model/juego_admi.class.php");
 
 $accion=$_REQUEST["action"];
  switch ($accion) {
- 	case 'juego_admi':
- 		 
- 		 $jue_usuario=$_POST["txtUsuario"];
- 		 $jue_codigo=$_POST["txtCodigo"];
- 		 $jue_consol=$_POST["cbConsol"];
- 		 $jue_categor=$_POST["cbCategor"];
- 		 $jue_name=$_POST["txtName"];
- 		 $jue_detail=$_POST["txtDetail"];
- 		 $jue_cantidad=$_POST["txtCantidad"];
- 		 $jue_imagen=$_POST["txtImagen"];
- 		 $jue_trailer=$_POST["txtTrailer"];
- 		 $jue_estado=$_POST["txtEstado"];
- 		 $jue_fecha=$_POST["txtFecha"];
- 		 $jue_clave=$_POST["txtClaves"];
+
+ 	case 'guardarjuego':
+ 		 $usu_cod=$_POST["usu_cod"];
+ 		 $jue_nom=$_POST["jue_nom"];
+ 		 $cons_cod=$_POST["cons_cod"];
+ 		 $cat_cod=$_POST["cat_cod"];
+ 		 $jue_desc=$_POST["jue_desc"];
+ 		 $jue_cant=$_POST["jue_cant"];
+ 		 $jue_trailer=$_POST["jue_trailer"];
+ 		 $jue_fech_public=$_POST["jue_fech_public"];
+ 		 $jue_imagen=$_POST["jue_imagen"];
+ 		 $jue_pal_clave=$_POST["jue_pal_clave"];
+     $jue_estado="activo";
 
  		 try {
- 		 	Gestion_Videojuego::Guardar($jue_usuario,$jue_codigo,$jue_consol,$jue_categor,$jue_name,$jue_detail,$jue_cantidad,$jue_imagen,$jue_trailer,$jue_estado,$jue_fecha,$jue_clave);
+ 		 	Gestion_Videojuego::Guardar($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado);
  		 	echo "Guardar con exito";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }
- 		break;
- 	
- 	default:
- 		# code...
  		break;
  }
 ?>
