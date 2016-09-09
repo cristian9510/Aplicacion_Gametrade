@@ -29,15 +29,15 @@
 				<br><br>
 
 				<label>Numero del documento: </label>
-				<input type="number" name="usu_num_docum" />
+				<input type="number" name="usu_num_docum" required/>
 				<br><br>
 
 				<label>Nombre: </label>
-				<input type="text" name="usu_nom"/>
+				<input type="text" name="usu_nom" required/>
 				<br><br>
 
 				<label>Apellido: </label>
-				<input type="text" name="usu_apell"/>
+				<input type="text" name="usu_apell" required/>
 				<br><br>
 
 				<label>Nick de usuario: </label>
@@ -45,19 +45,19 @@
 				<br><br>
 
 				<label>Correo electronico: </label>
-				<input type="text" name="usu_mail"/>
+				<input type="text" name="usu_mail" required/>
 				<br><br>
 
 				<label>Contraseña: </label>
-				<input type="password" name="usu_pass"/>
+				<input type="password" name="usu_pass" required/>
 				<br><br>
 
 				<label>Confirmar la contraseña: </label>
-				<input type="password" name="usu_pass"/>
+				<input type="password" name="usu_pass" required/>
 				<br><br>
 
 				<label>Fecha de nacimiento: </label>
-				<input type="date" name="usu_naci" />
+				<input type="date" name="usu_naci"  required/>
 				<br><br>
 
 				<label>Agrega una foto: </label>
@@ -74,7 +74,7 @@
 				<br><br>
 
         <label>Ciudad: </label>
-				<select id="ciu_cod" name="ciu_cod">
+				<select id="ciu_cod" name="ciu_cod" required>
 		      <?php
 		        echo "<option>Seleccione</option>";
 		          foreach ($ciu as $ciudad) {
@@ -85,7 +85,7 @@
         <br><br>
 
 				<label>Dirreccion: </label>
-				<input type="text" name="usu_dir" />
+				<input type="text" name="usu_dir" required/>
 				<br><br>
         <!-- fecha -->
 				<input type="hidden" name="usu_fech" readonly="" value="<?php echo date('d/m/Y')?>"/>

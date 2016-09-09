@@ -26,6 +26,7 @@ $accion=$_REQUEST["action"];
  		 try {
  		 	usuario::guardar($usu_tip_docum,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,
       $usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_fech,$usu_estado);
+      mkdir("Controller");
  		 	echo "Guardar con exito";
  		 } catch (Exception $e) {
  		 	echo $e;
