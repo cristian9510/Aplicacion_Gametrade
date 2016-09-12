@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
 <?php
   require_once("../Model/conexion.php");
   require_once("../Model/usuario.class.php");
@@ -14,7 +18,7 @@
    </head>
    <body>
      <div class="usuariomodificado">
-       <h1>Modificar usuario</h1>
+       <h1 style="text-align: center;">Modificar usuario</h1>
        <form  action="../Controller/usuario.controller.php" method="post">
 
          <input type="hidden" name="usu_cod" readonly value="<?php echo $usuariomo["usu_cod"]; ?>" />
@@ -62,7 +66,12 @@
 
  				<label>Agrega una foto: </label>
  				<input type="text" name="photo" value="<?php echo $usuariomo["photo"]; ?>"/>
- 				<button type="submit" name="agregarphoto">Aceptar</button>
+
+
+        <button type="submit"  name="agregarphoto"><a class="waves-effect waves-light btn">Aceptar</button></a>
+
+
+ 				
  				<br><br>
 
  				<label>Telefono: </label>
@@ -96,7 +105,8 @@
          </select>
          <br><br>
 
-         <button type="submit" name="action" value="modificarusuario">Modificar</button>
+         
+         <button type="submit" name="action"><a class="waves-effect waves-light btn">Modificar</button></a>
 
        </form>
      </div>
