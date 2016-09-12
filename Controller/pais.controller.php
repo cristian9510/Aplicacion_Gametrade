@@ -20,12 +20,13 @@ $accion=$_REQUEST["action"];
  		break;
 
     case 'modificar':
-      $pais_nom=$_POST["pais_nom"];
-      $estado=["estado"];
+      
       $pais_cod=$_POST["pais_cod"];
+      $pais_nom=$_POST["pais_nom"];
+      $estado=$_POST["estado"];
 
       try {
-        Gestion_Pais::modificar($pais_nom,$estado,$pais_cod);
+        Gestion_Pais::modificar($pais_cod,$pais_nom,$estado);
         echo "Se ha modificado";
         }
         catch (Exception $e){

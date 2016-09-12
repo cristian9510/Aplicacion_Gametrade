@@ -11,8 +11,7 @@
      <h1>Modificar Pais</h1>
      <form action="../Controller/pais.controller.php" method="post">
        <input type="hidden" name="pais_cod" readonly value="<?php echo $pais_mo["pais_cod"]; ?>"/>
-       <br><br>
-       <label>Nombre: </label>
+       <label>Pais: </label>
        <input type="text" name="pais_nom" required value="<?php echo $pais_mo["pais_nom"]; ?>">
        <br><br>
        <label>Estado: </label>

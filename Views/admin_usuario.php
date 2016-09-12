@@ -11,6 +11,20 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+    <script>
+    function myFunction() {
+    var x = document.getElementById("usu_pass").value;
+    var y = document.getElementById("usu_pass_c").value;
+    if (x==y){
+      document.getElementById("confirmar").innerHTML="Son iguales";
+    }
+    else{
+        document.getElementById("confirmar").innerHTML="No coinciden";
+    }
+    //x.value = x.value.toUpperCase();
+}
+</script>
+
 	</head>
 	<body>
     <h2>Consultar usuario</h2>
@@ -23,7 +37,7 @@
 					<option value="0">Seleccionar</option>
 					<option value="1">Cedula de Ciudadania</option>
 					<option value="2">Tarjeta de Identidad</option>
-					<option value="3">Cedula de Estranjeria</option>
+					<option value="3">Cedula de Extranjeria</option>
 				</select>
 				<br><br>
 
@@ -48,11 +62,12 @@
 				<br><br>
 
 				<label>Contraseña: </label>
-				<input type="password" name="usu_pass" required/>
+				<input type="password" name="usu_pass" id="usu_pass" required/>
 				<br><br>
 
 				<label>Confirmar la contraseña: </label>
-				<input type="password" name="usu_pass" required/>
+				<input type="password" name="usu_pass" id="usu_pass_c" onkeyup="myFunction()" required/>
+        <span id="confirmar"></span>
 				<br><br>
 
 				<label>Fecha de nacimiento: </label>

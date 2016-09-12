@@ -13,7 +13,7 @@ class Gestion_Pais{
 
 	}
 
-    function cargarpais(){
+    public static function cargarpais(){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -29,11 +29,11 @@ class Gestion_Pais{
 		return $result;
 	}
 
-	public static function modificar($pais_nom,$estado,$pais_cod){
+	public static function modificar($pais_cod,$pais_nom,$estado){
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-		$sql="UPDATE tbl_pais SET pais_nom= ?, estado= ?, WHERE pais_cod= ?";
+		$sql="UPDATE tbl_pais SET pais_nom= ?, estado= ? WHERE pais_cod= ?";
 		$query= $pdo->prepare($sql);
 		$query->execute(array($pais_nom,$estado,$pais_cod));
 

@@ -7,11 +7,13 @@
 <?php
 	require_once("../model/conexion.php");
 	require_once("../model/departamento.class.php");
+
 	$pais = Gestion_Departamento::cargarpais();
 ?>
 
 <meta charset="utf-8">
 <div class="formulariodepartamento" id="admin_consola">
+	<section>
 		<form action="../Controller/departamento.controller.php" method="post">
 
 		<label>Departamento: </label>
@@ -33,4 +35,11 @@
 
 		<button name="action" value="guardardepartamento"><a class="waves-effect waves-light btn">Aceptar</button></a>
 		</form>
-		</div>
+	</section>
+</div>
+
+<div class="consultardepartamento">
+	<section>
+		<a href="consultar_departamento.php"><h1>Cunsulatar departamentos.</h1></a>
+	</section>
+</div>
