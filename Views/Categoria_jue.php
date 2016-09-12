@@ -13,7 +13,7 @@ date_default_timezone_set('America/Bogota');
  ?>
 
 
-  <h1 style="text-align: center;">Categor&iacute;a del juego</h1>
+  <h1 style="text-align: center;color:#01DF74">Categor&iacute;a del juego</h1>
 
 
 <div class="Categoria">

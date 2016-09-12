@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="formulariojuego">
-      <h1 style="text-align: center;">juego</h1>
+      <h1 style="text-align: center;color: #01DFA5">Juegos</h1>
       <form action="../Controller/juego_admin.controller.php" method="post">
         <label>Codigo de usuario: </label>
         <input type="text" name="usu_cod">

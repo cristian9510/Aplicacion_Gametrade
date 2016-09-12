@@ -11,7 +11,7 @@ date_default_timezone_set('America/Bogota');
 
 <!--contenedor del formulario-->
 <div class="formilario_cat_bono">
-  <h1 style="text-align: center;">categoria de bonos</h1>
+  <h1 style="text-align: center;color:#11E5BB"><font face="arial,">categoria de bonos</h1></font>
   <!--aqui esta el formato y de esta de esta forma se hace -->
   <form action="../Controller/categoria_bono.controller.php" method="post">
 

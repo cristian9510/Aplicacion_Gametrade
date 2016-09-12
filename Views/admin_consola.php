@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
-<h1 style="text-align: center;" style="color: #000">CONSOLA</h1>
+<h1 style="text-align: center;color:#01DF74">Consola</h1>
 
 <section>
 

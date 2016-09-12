@@ -18,7 +18,7 @@ $bono=bono::mostrar_bono();
 <meta charset="utf-8">
 <!--contenedor del formulario-->
 <div class="formulariobono">
-  <h1 style="text-align: center;">Bono</h1>
+  <h1 style="text-align: center;color:#01DF74">Bono</h1>
 <!--aqui esta el formato y de esta de esta forma se hace -->
   <form action="../Controller/bono.controller.php" method="post">
     <label>Código de categoria de bono: </label>
