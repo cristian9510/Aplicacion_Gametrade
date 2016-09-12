@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <!--Título del formulario-->
 
-	<h1 style="text-align: center;color: #01DFA5"><font face="arial">Puntos</h1></font>
+	<h1 style="text-align: center;color: #000"><font face="arial">Puntos</h1></font>
 
 </br>
 

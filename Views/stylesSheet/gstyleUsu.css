@@ -20,7 +20,7 @@ header{
 	margin-top: 20px;
 }
 #e63Perfil:hover{
-	color: #Fff;
+	color: #000;
 }
 
 #ulDatos{
@@ -74,7 +74,7 @@ margin: auto;
 	height: 60px;
 	float: right;
 	margin-right: 20px;
-	background: #fff;
+	background: #000;
 }
 
 #e64Public{
