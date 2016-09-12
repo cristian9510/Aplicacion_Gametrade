@@ -1,8 +1,6 @@
-/*estilo del menu*/
-
-
 body{
 	margin: 0;
+	background: color #000;
 }
 header{
 	background: #000000;
@@ -17,20 +15,25 @@ header{
 
 #dvLogo{
 	background: url(../Imagen/logo.png) no-repeat;
-	width: 45%;
+	width: 55%;
 	height: 84px;
 	display: inline-block;
-	margin-top: 25px;
+	margin-left: 10px;
+	margin-top: 5px;
 	cursor: pointer;
+
 }
 #dvMenu{
-	width: 97%;
-	height: 90px;
-	background: #343434;
+	width: 60%;
+	height: 75px;	
 	overflow: hidden;
 	vertical-align: top;
-	margin-top: -10px;
+	margin-top: -50px;
 	list-style: none;
+	margin-left: 185px;
+	position: absolute;
+	z-index: 3;
+
 }
 
 #dvMenu li{
@@ -48,32 +51,38 @@ header{
 	display: inline-block;
 	width: 45%;
 	float: right;
+	margin-left: -200px;
 }
 
 #code{
 	margin-left: -40px !important;
 	overflow: hidden;
-	background: url(../Imagen/inicio.png) no-repeat;
+	background: url(../Imagen/inici.png) no-repeat;
 	width: 25%;
 	height: 80px;
 	overflow: hidden;
 }
 
 #liwor{
-	background: url(../Imagen/quienes_somos.png) no-repeat;
+	background: url(../Imagen/quienes_som.png) no-repeat;
 	width: 25%;
 	height: 80px;
+	margin-left: -75px !important;
+
 }
 #licontact{
-	background: url(../Imagen/contactenos.png) no-repeat;
+	background: url(../Imagen/contacteno.png) no-repeat;
 	width: 25%;
 	height: 80px;
 	margin-top: 5px;
+	margin-left: 60px  ;
+	margin-left: 15px !important;
 }
 #liUsa{
-	background: url(../Imagen/comousa.png) no-repeat;
+	background: url(../Imagen/como.jpg) no-repeat;
 	width: 25%;
 	height: 80px;
+	margin-left: -25px !important;
 }
 
 #invitLogin{
@@ -130,7 +139,7 @@ header{
 	border:none;
 	width: 100%;
 	height:30px;
-	list-style: none;
+	list-style: none;	
 	background: none;
 	cursor: pointer;
 }
@@ -148,7 +157,7 @@ header{
 }
 
 #ulRecord li{
-	color: #1c6fd0;
+	color: #00BFFF;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 20px;
@@ -232,7 +241,7 @@ input{
 	height: 30px;
 	width: 1%;
 }
-
+	
 
 footer{
 	color: #fff;

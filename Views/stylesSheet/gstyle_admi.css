@@ -6,6 +6,7 @@ como hacer la imagen el 100%
 como hacer que la linea ocupe todo el menu
 */
 
+
 header{
 	background: #000;
 	height: 100px;
@@ -98,6 +99,7 @@ header{
 	width: 1333px;
 	height: 500px;
 	display: none;
+	background: url(../imagen/mi.jpg);
 }
 
 #stA_Game{
