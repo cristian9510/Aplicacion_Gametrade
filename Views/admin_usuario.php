@@ -16,7 +16,6 @@
     <h2>Consultar usuario</h2>
 		<div class="formulariousuario">
       <h1><a href="consultar_usuarios.php">Consultar usuario</a></h1>
-
 			<form action="../Controller/usuario.controller.php" method="post">
 
 				<label for="">Tipo de documento: </label>

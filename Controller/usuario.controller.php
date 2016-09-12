@@ -50,10 +50,7 @@ $accion=$_REQUEST["action"];
        $usu_estado=$_POST["usu_estado"];
        $usu_cod=$_POST["usu_cod"];
        try {
-         usuario::modificarusuario($usu_tip_docum,
-  $usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,
-  $usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,
-  $usu_dir,$usu_estado,$usu_cod);
+         usuario::modificarusuario($usu_tip_docum,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_estado,$usu_cod);
          echo "se a modificado";
        }
        catch (Exception $e){
