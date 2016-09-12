@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	background: url(../imagen/fondoU.png);
+	background: url(../imagen/mi.jpg);
 }
 #dv_main{
 	width: 100%;
@@ -20,7 +20,7 @@ header{
 	margin-top: 20px;
 }
 #e63Perfil:hover{
-	color: #FFFF00;
+	color: #Fff;
 }
 
 #ulDatos{
@@ -111,7 +111,7 @@ margin: auto;
 	display: inline-block;
 	float: right;
 	margin-right: 30px;
-	color: #FFFF00;
+	color: #000;
 }
 
 #menuUsu li{
