@@ -1,3 +1,7 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
 <?php
   date_default_timezone_set('America/Bogota');
  ?>
@@ -9,7 +13,7 @@
   </head>
   <body>
     <div class="formulariojuego">
-      <h1>juego</h1>
+      <h1 style="text-align: center;">juego</h1>
       <form action="../Controller/juego_admin.controller.php" method="post">
         <label>Codigo de usuario: </label>
         <input type="text" name="usu_cod">
@@ -49,7 +53,9 @@
         <input type="text" name="jue_pal_clave">
         <br><br>
 
-        <button type="submit" name="action" value="guardarjuego">Aceptar</button>
+        
+
+        <button name="action" value="guardarjuego"><a class="waves-effect waves-light btn">Aceptar</button></a>
       </form>
     </div>
   </body>

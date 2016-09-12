@@ -1,8 +1,13 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
+
 <meta charset="utf-8">
 <!--Título del formulario-->
-<div class="titulo_puntos">
-	<h1>Puntos</h1>
-</div>
+
+	<h1 style="text-align: center;" style="color: #01DFA5">Puntos</h1>
+
 </br>
 
 <div class="formulario_pto">
@@ -19,6 +24,7 @@
 		</br></br>
 
 		<!--Botón de guardado-->
-		<button name="action" value="guardarpunto">Guardar</button>
+		<button name="action" value="guardarpunto"><a class="waves-effect waves-light btn">Guardar</button></a>
+		
 	</form>
 </div>

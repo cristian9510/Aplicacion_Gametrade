@@ -1,3 +1,7 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
 <?php
 require_once("../Model/conexion.php");
 require_once("../Model/Categoria_bono.class.php");
@@ -7,7 +11,7 @@ date_default_timezone_set('America/Bogota');
 
 <!--contenedor del formulario-->
 <div class="formilario_cat_bono">
-  <h1>categoria de bonos</h1>
+  <h1 style="text-align: center;">categoria de bonos</h1>
   <!--aqui esta el formato y de esta de esta forma se hace -->
   <form action="../Controller/categoria_bono.controller.php" method="post">
 
@@ -18,7 +22,8 @@ date_default_timezone_set('America/Bogota');
     <!-- fecha -->
     <input type="hidden" name="cat_bono_fech" value="<?php echo date('d/m/Y')?>"/>
     <!--este es el boton-->
-    <button name="action" value="guardar_cat_bono">Guardar</button>
+    <button name="action" value="guardar_cat_bono"><a class="waves-effect waves-light btn">Guardar</button></a>
+    
   </form>
 </div>
 

@@ -1,3 +1,9 @@
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
 <!--este es una conexion por haci desirlo-->
 <?php
 require_once("../Model/conexion.php");
@@ -12,7 +18,7 @@ $bono=bono::mostrar_bono();
 <meta charset="utf-8">
 <!--contenedor del formulario-->
 <div class="formulariobono">
-  <h1>Bono</h1>
+  <h1 style="text-align: center;">Bono</h1>
 <!--aqui esta el formato y de esta de esta forma se hace -->
   <form action="../Controller/bono.controller.php" method="post">
     <label>Código de categoria de bono: </label>
@@ -51,7 +57,8 @@ $bono=bono::mostrar_bono();
     </br>
     </br>
     <!--este es el boton-->
-    <button name="action" value="guardarbono">Guardar</button>
+    <button name="action" value="guardarbono"><a class="waves-effect waves-light btn">Guardar</button></a>
+    
   </form>
 </div>
 
