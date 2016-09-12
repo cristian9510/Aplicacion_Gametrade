@@ -14,10 +14,11 @@ header{
 }
 
 #dvLogo{
-	background: url(../imagen/logo.png);
+	background: url(../imagen/logo.png)no-repeat;
 	width: 60%;
 	height: 93%;
 	display: inline-block;
+	margin-top: 18px;
 }
 
 
