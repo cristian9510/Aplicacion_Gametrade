@@ -5,8 +5,9 @@
 <?php
   require_once("../Model/conexion.php");
   require_once("../Model/usuario.class.php");
-  
+
   $ciu = usuario::consultarciudad();
+  $documento = usuario::consultardocumento();
   $usuariomo=usuario::consultarcodigo(base64_decode($_GET["codigo_usuario"]));
  ?>
 
@@ -24,13 +25,15 @@
          <input type="hidden" name="usu_cod" readonly value="<?php echo $usuariomo["usu_cod"]; ?>" />
 
          <label for="">Tipo de documento: </label>
-   				<select name="usu_tip_docum" id="documento" required value="<?php echo $usuariomo["usu_tip_docum"]; ?>">
-   					<option value="0">Seleccionar</option>
-   					<option value="1">Cedula de Ciudadania</option>
-   					<option value="2">Tarjeta de Identidad</option>
-   					<option value="3">Cedula de Estranjeria</option>
-   				</select>
- 				  <br><br>
+         <select id="tipo_cod" name="tipo_cod" required>
+           <?php
+             echo "<option>Seleccione</option>";
+               foreach ($documento as $docu) {
+                 echo "<option value=".$docu["tipo_cod"].">".$docu["tipo_documento"]."</option>";
+             }
+            ?>
+         </select>
+         <br><br>
 
  				<label>Numero del documento: </label>
  				<input type="number" name="usu_num_docum" value="<?php echo $usuariomo["usu_num_docum"]; ?>"/>
@@ -67,11 +70,8 @@
  				<label>Agrega una foto: </label>
  				<input type="text" name="photo" value="<?php echo $usuariomo["photo"]; ?>"/>
 
-
         <button type="submit"  name="agregarphoto"><a class="waves-effect waves-light btn">Aceptar</button></a>
 
-
- 				
  				<br><br>
 
  				<label>Telefono: </label>
@@ -105,7 +105,7 @@
          </select>
          <br><br>
 
-         
+
          <button type="submit" name="action"><a class="waves-effect waves-light btn">Modificar</button></a>
 
        </form>

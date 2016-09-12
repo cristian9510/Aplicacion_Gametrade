@@ -32,7 +32,7 @@
          <?php foreach ($usuario as $bn): ?>
            <tr>
              <td><?php echo $bn["usu_cod"];        ?></td>
-             <td><?php echo $bn["usu_tip_docum"];  ?></td>
+             <td><?php echo $bn["tipo_cod"];       ?></td>
              <td><?php echo $bn["usu_num_docum"];  ?></td>
              <td><?php echo $bn["usu_nom"];        ?></td>
              <td><?php echo $bn["usu_apell"];      ?></td>

@@ -30,6 +30,22 @@
     return $result;
   }
 
+  public static function consultardocumento(){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql= "select * from tbl_tipodocumento";
+
+    $query= $pdo->prepare($sql);
+    $query->execute();
+
+    $result=$query->fetchALL(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
   public static function mostrarusuario(){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);

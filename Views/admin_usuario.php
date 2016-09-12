@@ -6,6 +6,7 @@
   require_once("../Model/usuario.class.php");
 
   $ciu = usuario::consultarciudad();
+  $documento = usuario::consultardocumento();
   date_default_timezone_set('America/Bogota');
  ?>
 
@@ -24,7 +25,6 @@
     else{
         document.getElementById("confirmar").innerHTML="No coinciden";
     }
-    //x.value = x.value.toUpperCase();
 }
 </script>
 
@@ -35,14 +35,17 @@
       <h1><a href="consultar_usuarios.php">Consultar usuario</a></h1>
 			<form action="../Controller/usuario.controller.php" method="post">
 
-				<label for="">Tipo de documento: </label>
-				<select name="usu_tip_docum" id="documento">
-					<option value="0">Seleccionar</option>
-					<option value="1">Cedula de Ciudadania</option>
-					<option value="2">Tarjeta de Identidad</option>
-					<option value="3">Cedula de Extranjeria</option>
-				</select>
-				<br><br>
+				<label>Tipo de documento: </label>
+
+        <select id="tipo_cod" name="tipo_cod" required>
+          <?php
+            echo "<option>Seleccione</option>";
+              foreach ($documento as $docu) {
+                echo "<option value=".$docu["tipo_cod"].">".$docu["tipo_documento"]."</option>";
+            }
+           ?>
+        </select>
+        <br><br>
 
 				<label>Numero del documento: </label>
 				<input type="number" name="usu_num_docum" required/>
