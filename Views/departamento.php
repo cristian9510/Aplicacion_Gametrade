@@ -1,3 +1,9 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
+
 <?php
 	require_once("../model/conexion.php");
 	require_once("../model/departamento.class.php");
@@ -23,6 +29,8 @@
 		</select>
 		<br><br>
 
-		<button name="action" value="guardardepartamento">Aceptar</button>
+		
+
+		<button name="action" value="guardardepartamento"><a class="waves-effect waves-light btn">Aceptar</button></a>
 		</form>
 		</div>

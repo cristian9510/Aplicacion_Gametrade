@@ -1,5 +1,8 @@
 <footer>
-	<h1 >Siguenos tambien aqui</h1>
+    
+	<h1 >Siguenos Tambien Aqui</h1>
+
+	
 	<style>
 /* Botones de Redes Sociales - Ciudad Blogger */
 .social_bookmarks_container {
@@ -8,14 +11,12 @@ height:45px;
 padding:0;
 position:absolute;
 }
-
 .social_bookmarks {
 position:relative;
 float:left;
 margin:0;
 padding:0;
 }
-
 .social_bookmarks li {
 margin:0 0 1px 1px;
 height:57px;
@@ -26,11 +27,11 @@ padding:0;
 -webkit-transition: all 0.4s ease-in-out;
 -moz-transition: all 0.4s ease-in-out;
 -o-transition: all 0.4s ease-in-out;
--ms-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out; 
 transition: all 0.4s ease-in-out;
 background-position:center
-}
 
+}
 .social_bookmarks li a {
 float:left;
 width:57px;
@@ -44,7 +45,6 @@ min-height:57px;
 height:180%;
 text-decoration:none;
 }
-
 .social_bookmarks .iconrss{background: #A4A4A4 url(//lh6.googleusercontent.com/-s8sIx3OX2WI/U4vC1nmgr0I/AAAAAAAALK4/W3Z3qXMwrCg/s114/icon-rss.png) top left no-repeat;}
 .social_bookmarks .iconrssmail{background: #BDBDBD url(//lh5.googleusercontent.com/-H4iUybdCAyU/U4vC1yQWu1I/AAAAAAAALLE/fTpR7eN4cIw/s114/icon-rssmail.png) top left no-repeat;}
 .social_bookmarks .icontwitter{background: #D8D8D8 url(//lh6.googleusercontent.com/-4TshwJW7hIE/U4vC2JM25AI/AAAAAAAALLI/tcIkpheXrYU/s114/icon-twitter.png) top left no-repeat;}
@@ -57,6 +57,7 @@ text-decoration:none;
 .social_bookmarks .iconrssmail:hover{background-position:center -57px; background-color: #FFDE00;}
 .social_bookmarks li:hover a{background: transparent url(//lh4.googleusercontent.com/-XNviZ_JqvyU/U4vDMDFAX8I/AAAAAAAALLk/E4VIJr1onlo/s57/icon-social-reflect.png) no-repeat;
 }
+
 
 </style>
 <div class='social_bookmarks_container'>
@@ -102,11 +103,11 @@ Google Plus
 	<p style="text-align: center;">Copyright 2016 ciudadanoo
 	tempor incididunt .</p>
 
-	<p style="text-align: center;">numero telefonico:345621</p>
+	<p style="text-align: center;">Tel:3456214546</p>
 
 
 
-<div align="right" style="margin-top:-220px;"><img src="imagen/logotipo.PNG"></div>
+<div align="right" style="margin-top:-120px;"><img src="imagen/logos.PNG"></div>
 
 
 

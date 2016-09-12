@@ -4,11 +4,24 @@
 	<title></title>
 	<meta charset="utf8"/>
 	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyleUsu.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesSheet/userperfil.css"/>
 </head>
 <body>
 	<div id="dv_main">
 		<?php require_once("header_Usu.php"); ?>
-		<div></div>
+		<div id="e64ContUsu"><!--cuadro q contiene todo-->
+			<div id="e64cPunt"><!--cuadro q contiene la parte de los puntos y juegos-->
+				<div id="e64fPutn"><!--cuadro q contiene la parte fondo imagen-->
+					<div id="e64TexT">Tus</div>
+					<div id="e64TexP">Puntos</div>
+					<div id="e64TexVlr">100</div>
+					<h2>Juegos</h2>
+				</div>
+			</div>
+			
+			<div id="e64Tendenc"></div>
+		
+		</div>
 	</div>
 </body>
 </html>

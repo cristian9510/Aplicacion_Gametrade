@@ -1,6 +1,7 @@
 <header>
 	<div id="dvLogo"></div>
-	<div id="logn" onclick="destroy()">Cerrar session</div>
+	<div id="logn" onclick="destroy()"><li ><a style="color: #fff" href="index.php">Cerrar seccion</a></li></div>
+
 </header>
 <ul id="ulMain">
 	<li onclick="sbMenu('inicio')" id="dvMinicio">Inicio</li>

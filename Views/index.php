@@ -30,11 +30,11 @@
 		<div id="captioned-gallery">
 			<figure class="slider">
 				<figure>
-					<img src="Imagen/SA.jpg" alt>
+					<img src="Imagen/04.jpg" alt>
 					<figcaption>Hobbiton, New Zealand</figcaption>
 				</figure>
 				<figure>
-					<img src="Imagen/SER.jpg" alt>
+					<img src="Imagen/03.jpg" alt>
 					<figcaption>Wanaka, New Zealand</figcaption>
 				</figure>
 
@@ -44,12 +44,12 @@
 				</figure>
 
 				<figure>
-					<img src="Imagen/va.jpg" alt>
+					<img src="Imagen/05.jpg" alt>
 					<figcaption>Wanaka, New Zealand</figcaption>
 				</figure>
 
 				<figure>
-					<img src="Imagen/1S.jpg" alt>
+					<img src="Imagen/va." alt>
 					<figcaption>Hobbiton, New Zealand</figcaption>
 				</figure>
 				<figure>
@@ -64,7 +64,7 @@
 		</div>
 	</div>
 	<div id="e64Video">
-		<iframe width="950" height="400" src="https://www.youtube.com/watch?v=LzUYvgtvSoY" frameborder="0" allowfullscreen></iframe>
+		<iframe width="950" height="400" src="https://www.youtube.com/embed/LzUYvgtvSoY" frameborder="0" allowfullscreen></iframe>
 	</div>
 
 	<div id="e64ContePublic">
