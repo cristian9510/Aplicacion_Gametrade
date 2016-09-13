@@ -1,15 +1,15 @@
 <?php
   require_once("../Model/conexion.php");
-  require_once("../Model/pais.class.php");
+  require_once("../Model/departamento.class.php");
 
-  $departamento_mo=Gestion_Pais::consultarcodigo(base64_decode($_GET["codigo_departamento"]));
+  $departamento_mo=Gestion_Departamento::consultarporcodigo(base64_decode($_GET["codigo_departamento"]));
  ?>
 
  <meta charset="utf-8">
  <div class="pais_mo">
    <section>
      <h1>Modificar departamento</h1>
-     <form action="../Controller/pais.controller.php" method="post">
+     <form action="../Controller/departamento.controller.php" method="post">
        <input type="hidden" name="depar_cod" readonly value="<?php echo $departamento_mo["depar_cod"]; ?>"/>
        <label>departamento: </label>
        <input type="text" name="depar_nom" required value="<?php echo $departamento_mo["depar_nom"]; ?>">

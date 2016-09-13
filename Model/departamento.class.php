@@ -46,19 +46,32 @@
 		return $result;
 	}
 
-	// public static function modificar($pais_nom,$estado,$pais_cod){
-	// 	$pdo = ConexionBD::AbrirBD();
-	// 	$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-	//
-	// 	$sql="UPDATE tbl_pais SET pais_nom= ?, estado= ?, WHERE pais_cod= ?";
-	// 	$query= $pdo->prepare($sql);
-	// 	$query->execute(array($pais_nom,$estado,$pais_cod));
-	//
-	// 	ConexionBD::DesconectarBD();
-	// }
+	public static function consultarporcodigo($codigo){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+    $sql="select * from tbl_departamento WHERE depar_cod=?";
+
+    $query= $pdo->prepare($sql);
+    $query->execute(array($codigo));
+
+    $result= $query->fetch(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+	}
+
+	public static function modificar($depar_nom,$pais_cod,$estado,$depar_cod){
+		$pdo = ConexionBD::AbrirBD();
+		$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+		$sql="UPDATE tbl_departamento SET depar_nom= ?, pais_cod=?, estado= ? WHERE depar_cod= ?";
+		$query= $pdo->prepare($sql);
+		$query->execute(array($depar_nom,$pais_cod,$estado,$depar_cod));
+
+		ConexionBD::DesconectarBD();
+	}
 
 }
-
-
-
 ?>

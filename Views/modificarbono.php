@@ -5,22 +5,15 @@
 $bonomo = bono::consultarporCodigo(base64_decode($_GET["codigo_bono"]));
 ?>
 
-<!DOCTYPE html>
-<html>
-  <head>
+
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css">
-    <title></title>
-  </head>
-  <body>
-      <center>
-        <div class="fondo">
+        <div class="tablabono">
+          <section>
           <!--est es para doper modificar-->
-          <h1>Modificar bono</h1>
+          <h1>Modificar bono.</h1>
           <form action="../Controller/bono.controller.php" method="post">
             <input type="hidden" name="bono_cod" readonly value="<?php echo $bonomo["bono_cod"]; ?>" />
-            </br>
-            </br>
+
             <label>Código de categoria de bono: </label>
             <input type="text" name="cat_bono_cod"  required value="<?php echo $bonomo["cat_bono_cod"]; ?>"/>
             </br>
@@ -40,7 +33,6 @@ $bonomo = bono::consultarporCodigo(base64_decode($_GET["codigo_bono"]));
             <!--este es el boton-->
             <button name="action" value="modificar">modificar</button>
           </form>
-        </div>
-    </center>
-    </body>
-</html>
+
+        </section>
+      </div>

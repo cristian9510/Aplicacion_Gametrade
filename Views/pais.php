@@ -14,7 +14,12 @@
 		<label>nombre: </label>
 		<input type="text" name="pais_nom" required>
 		<br><br>
-		
+
 		<button name="action" value="guardarpais"><a class="waves-effect waves-light btn">Aceptar</button></a>
 		</form>
+	</div>
+	<div class="consultarpais">
+		<section>
+			<a href="consultar_pais.php"><h1>Cunsulatar paises.</h1></a>
+		</section>
 	</div>
