@@ -1,8 +1,8 @@
 <?php
  require_once("../model/conexion.php");
- require_once("../model/pais.class.php");
+ require_once("../model/consola.class.php");
 
- $pais =Gestion_Pais::cargarpais();
+  $pais =Gestion_Pais::cargarpais();
  ?>
 
 <div class="tablapais">

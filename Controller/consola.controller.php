@@ -8,17 +8,33 @@ $accion=$_REQUEST["action"];
 
  	case 'guardarconsola':
 
- 		 $cod_nombre=$_POST["cons_nom"];
- 		 $cod_referencia=$_POST["cons_refer"];
- 		 $cod_estado="activo";
- 		 $cod_imagen=$_POST["cons_imagen"];
+     $cons_cod=$_POST["cons_cod"];
+ 		 $cons_nom=$_POST["cons_nom"];
+ 		 $cons_refer=$_POST["cons_refer"];
+ 		 $cons_imagen=$_POST["cons_imagen"];
+     $cons_estado="activo";
 
  		 try {
- 		 	Gestion_Consola::Guardar($cod_nombre,$cod_referencia,$cod_estado,$cod_imagen);
+ 		 	Gestion_Consola::guardar($cons_nom,$cons_refer,$cons_imagen,$cons_estado,$cons_cod);
  		 	echo "Guardar con exito";
  		 } catch (Exception $e) {
  		 	echo $e;
  		 }
  		break;
+
+    case 'modificar':
+
+      $cons_nom=$_POST["cons_nom"];
+      $cons_refer=$_POST["cons_refer"];
+      $cons_imagen=$_POST["cons_imagen"];
+      $cons_estado=$_POST["cons_estado"];
+      $cons_cod=$_POST["cons_cod"];
+       try {
+        Gestion_Consola::modificar($cons_nom,$cons_refer,$cons_imagen,$cons_estado,$cons_cod);
+        echo "Modificado con exito";
+       } catch (Exception $e) {
+        echo $e;
+       }
+      break;
  }
 ?>
