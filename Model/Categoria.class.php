@@ -1,13 +1,10 @@
-<!--Se recojen los datos para envíarlos a la Base de Datos-->
 <?php
-
 class Categoria_jue{
-
   function Guardar($cat_nom, $cat_fech, $cat_desc, $cat_estado){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql="INSERT INTO tbl_categoria_jue(cat_nom, cat_fech, cat_desc, cat_estado) values(?,?,?,?)";
+    $sql="INSERT INTO tbl_categoria_jue(cat_nom, cat_desc, cat_fech, cat_estado) values(?,?,?,?)";
 
     $query= $pdo->prepare($sql);
     $query->execute(array($cat_nom, $cat_fech, $cat_desc, $cat_estado));
