@@ -56,9 +56,6 @@ require_once("../Model/conexion.php");
 
 </section>
 
-<section id="stA_Encuesta">
-
-</section>
 
 <section id="stA_Sancion">
 

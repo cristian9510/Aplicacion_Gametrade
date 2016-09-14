@@ -1,12 +1,12 @@
 <?php
-  require_once("../Model/coneXion.php");
+  require_once("../Model/conexion.php");
   require_once("../Model/usuario.class.php");
 
   $usuario = usuario::mostrarusuario();
  ?>
 
 <meta charset="utf-8">
-<div class="tablabono">
+<div class="tablausuario">
   <table border="1px">
     <thead>
       <th colspan="16">Informacion de usuarios</th>

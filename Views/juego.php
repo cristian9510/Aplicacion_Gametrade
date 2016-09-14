@@ -1,20 +1,20 @@
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-
 <?php
   date_default_timezone_set('America/Bogota');
  ?>
+
 <meta charset="utf-8">
 <html>
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   </head>
   <body>
     <div class="formulariojuego">
       <h1 style="text-align: center;color: #000">Juegos</h1>
       <form action="../Controller/juego_admin.controller.php" method="post">
+
         <label>Codigo de usuario: </label>
         <input type="text" name="usu_cod">
         <br><br>
@@ -27,7 +27,7 @@
         <input type="text" name="cons_cod">
         <br><br>
 
-        <label>Categoria bono: </label>
+        <label>Categoria juego: </label>
         <input type="text" name="cat_cod">
         <br><br>
 
@@ -47,16 +47,22 @@
 
         <label>Imagen del juego: </label>
         <input type="text" name="jue_imagen">
-        <br><br>
+        <br>
+        <button type="submit" name="button">Agregar</button>
+        <br>
 
         <label>Palabras claves: </label>
         <input type="text" name="jue_pal_clave">
         <br><br>
 
-        
-
         <button name="action" value="guardarjuego"><a class="waves-effect waves-light btn">Aceptar</button></a>
       </form>
+    </div>
+
+    <div class="consulatr_juegoa">
+      <section>
+        <a href=consultar_juego.php>Consultar juego.</a>
+      </section>
     </div>
   </body>
 </html>

@@ -13,5 +13,4 @@
 	<li onclick="sbMenu('juego')" id="dvMjuego">Juego</li>
 	<li onclick="sbMenu('bono')" id="dvMbono">Bono</li>
 	<li onclick="sbMenu('categoriabono')" id="dvMbonos">Categoria bono</li>
-	<li onclick="sbMenu('encuesta')" id="dvMencuesta">Encuesta</li>
 </ul>

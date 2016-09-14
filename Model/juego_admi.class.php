@@ -13,7 +13,23 @@ class Gestion_Videojuego{
 
 	}
 
-	function mostrarConsol(){
+	public static function consultarporCodigo($codigo){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+    $sql="select * from tbl_videojuego WHERE jue_cod=?";
+
+    $query= $pdo->prepare($sql);
+    $query->execute(array($codigo));
+
+    $result= $query->fetch(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
+	public static function mostrarConsol(){
 
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -30,7 +46,7 @@ class Gestion_Videojuego{
 		return $result;
 	}
 
-	function mostrarCategoria(){
+	 public static function mostrarCategoria(){
 
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -48,7 +64,7 @@ class Gestion_Videojuego{
 	}
 
 
-	function mostrarjuego(){
+	public static function mostrarjuego(){
 
 		$pdo = ConexionBD::AbrirBD();
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -82,13 +98,6 @@ class Gestion_Videojuego{
 
 		return $result;
 	}
-
-
-
-
-
-
-
 }
 
 ?>

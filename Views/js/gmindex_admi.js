@@ -197,39 +197,6 @@ function sbMenu(v_var){
 			$("#stA_Puntos").fadeIn(1000);
 		break;
 
-		case "bono":
-			$("#stMain").fadeOut();
-			$("#stA_usuario").fadeOut();
-			$("#stA_juego").fadeOut();
-      $("#stA_inicio").fadeOut();
-			$("#stA_Consola").fadeOut();
-			$("#stA_Categoria").fadeOut();
-			$("#stA_Puntos").fadeOut();
-			$("#stA_Encuesta").fadeOut();
-			$("#stA_Sancion").fadeOut();
-			$("#stA_Puntosjue").fadeOut();
-			$("#stA_Inform").fadeOut();
-			$("#stA_nacionalidad").fadeOut();
-      $("#stA_categoriabono").fadeOut();
-			$("#stA_Bono").fadeIn(1000);
-		break;
-
-		case "encuesta":
-			$("#stMain").fadeOut();
-			$("#stA_usuario").fadeOut();
-			$("#stA_juego").fadeOut();
-      $("#stA_inicio").fadeOut();
-			$("#stA_Consola").fadeOut();
-			$("#stA_Categoria").fadeOut();
-			$("#stA_Bono").fadeOut();
-			$("#stA_Puntos").fadeOut();
-			$("#stA_Sancion").fadeOut();
-			$("#stA_Puntosjue").fadeOut();
-			$("#stA_Inform").fadeOut();
-			$("#stA_nacionalidad").fadeOut();
-			$("#stA_Encuesta").fadeIn(1000);
-		break;
-
 		case "sancion":
 			$("#stMain").fadeOut();
 			$("#stA_usuario").fadeOut();
