@@ -12,10 +12,10 @@
 		<div id="e64ContUsu"><!--cuadro q contiene todo-->
 			<div id="e64cPunt"><!--cuadro q contiene la parte de los puntos y juegos-->
 				<div id="e64fPutn"><!--cuadro q contiene la parte fondo imagen-->
-					<div id="e64TexT">Tus</div>
-					<div id="e64TexP">Puntos</div>
+					<div style="color: #fff" id="e64TexT">Tus</div>
+					<div style="color: #fff" id="e64TexP">Puntos</div>
 					<div id="e64TexVlr">100</div>
-					<h2>Juegos</h2>
+					<h2 style="color: #fff" >Juegos</h2>
 					
 				</div>
 			</div>

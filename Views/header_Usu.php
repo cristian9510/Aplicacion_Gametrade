@@ -2,7 +2,7 @@
 <header>
 
     
-	<div style="color: #000" id="e63Perfil">Mi perfil</div>
+	<div style="color: #fff" id="e63Perfil">Mi perfil</div>
 	<div id="e64ConteDato">
 
 		
@@ -13,9 +13,9 @@
 
 		<ul id="ulDatos">
 
-			<li style="color: #000">andres02 </li>
-			<li style="color: #000">1850 pts</li>
-			<li ><a style="color: #000" href="index.php">Cerrar seccion</a></li>
+			<li style="color: #fff">andres02 </li>
+			<li style="color: #fff">1850 pts</li>
+			<li ><a style="color: #fff" href="index.php">Cerrar seccion</a></li>
 			
 			
 		</ul>
