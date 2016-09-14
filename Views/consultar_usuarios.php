@@ -1,6 +1,7 @@
 <?php
   require_once("../Model/coneXion.php");
   require_once("../Model/usuario.class.php");
+
   $usuario = usuario::mostrarusuario();
  ?>
 
@@ -32,7 +33,7 @@
          <?php foreach ($usuario as $bn): ?>
            <tr>
              <td><?php echo $bn["usu_cod"];        ?></td>
-             <td><?php echo $bn["tipo_cod"];       ?></td>
+             <td><?php echo $bn["tipo_documento"];       ?></td>
              <td><?php echo $bn["usu_num_docum"];  ?></td>
              <td><?php echo $bn["usu_nom"];        ?></td>
              <td><?php echo $bn["usu_apell"];      ?></td>
@@ -42,7 +43,7 @@
              <td><?php echo $bn["usu_naci"];       ?></td>
              <td><?php echo $bn["usu_tel"];        ?></td>
              <td><?php echo $bn["usu_cel"];        ?></td>
-             <td><?php echo $bn["ciu_cod"];        ?></td>
+             <td><?php echo $bn["ciu_nom"];        ?></td>
              <td><?php echo $bn["usu_dir"];        ?></td>
              <td><?php echo $bn["usu_fech"];       ?></td>
              <td><?php echo $bn["usu_estado"];     ?></td>

@@ -50,7 +50,12 @@
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="select * from tbl_usuario";
+    $sql="select tbl_usuario.usu_cod, tbl_usuario.usu_num_docum, tbl_usuario.usu_nom, tbl_usuario.usu_apell, tbl_usuario.usu_nick, tbl_usuario.usu_mail, tbl_usuario.usu_pass, tbl_usuario.usu_naci,  tbl_usuario.usu_tel, tbl_usuario.usu_cel, tbl_usuario.usu_dir, tbl_usuario.usu_fech, tbl_usuario.usu_estado, tbl_tipodocumento.tipo_documento, tbl_ciudad.ciu_nom
+            from tbl_usuario
+            inner join tbl_tipodocumento
+            on tbl_usuario.tipo_cod = tbl_tipodocumento.tipo_cod
+            inner join tbl_ciudad
+            on tbl_usuario.ciu_cod = tbl_ciudad.ciu_cod";
 
     $query= $pdo->prepare($sql);
     $query->execute();

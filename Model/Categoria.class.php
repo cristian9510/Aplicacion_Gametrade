@@ -1,6 +1,6 @@
 <?php
 class Categoria_jue{
-  function Guardar($cat_nom, $cat_fech, $cat_desc, $cat_estado){
+  public static function Guardar($cat_nom, $cat_fech, $cat_desc, $cat_estado){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -11,35 +11,49 @@ class Categoria_jue{
 
     ConexionBD::DesconectarBD();
 }
-    function Consultar(){
 
+    public static function Consultar_categoria_juego(){
  		$pdo = ConexionBD::AbrirBD();
     	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    	$sql= "SELECT * FROM tbl_categoria_jue ORDER BY cat_nom";
+    	$sql= "SELECT * FROM tbl_categoria_jue";
 
 	    $query= $pdo->prepare($sql);
     	$query->execute();
 
     	$result = $query->fetchALL(PDO::FETCH_BOTH);
 
-    	ConexionBD::CerrarBD();
+    	ConexionBD::DesconectarBD();
 
     	return $result;
  	}
 
- 	function Modificar($cat_cod, $cat_nom, $cat_fech, $cat_desc, $cat_estado){
+  public static function consultarporCodigo($codigo){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
+    $sql="select * from tbl_categoria_jue WHERE cat_cod= ?";
+
+    $query= $pdo->prepare($sql);
+    $query->execute(array($codigo));
+
+    $result= $query->fetch(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
+ 	public static function modificar($cat_nom, $cat_desc, $cat_fech, $cat_estado,$cat_cod){
  		$pdo = ConexionBD::AbrirBD();
     	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    	$sql= "UPDATE tbl_categoria_jue SET cat_nom = ? cat_desc = ? cat_estado = ? cat_fech = ?  WHERE cat_cod = ?";
+    	$sql= "UPDATE tbl_categoria_jue SET cat_nom = ?, cat_desc = ?, cat_fech = ?, cat_estado = ?  WHERE cat_cod = ?";
 
 	    $query= $pdo->prepare($sql);
-    	$query->execute(array($cat_nom, $cat_desc, $cat_estado, $cat_fech, $cat_cod));
+    	$query->execute(array($cat_nom, $cat_desc, $cat_fech, $cat_estado, $cat_cod));
 
-
-    	ConexionBD::CerrarBD();
+    	ConexionBD::DesconectarBD();
 	}
 }
 ?>
