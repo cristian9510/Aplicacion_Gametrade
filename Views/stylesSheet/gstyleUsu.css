@@ -1,6 +1,6 @@
 body{
-	margin: 0;
-	background: url(../imagen/mi.jpg);
+	margin: 12;
+	background: url(../imagen/ne.jpg);
 }
 #dv_main{
 	width: 100%;
@@ -10,7 +10,7 @@ header{
 	height: 150px;
 }
 #e63Perfil{
-	color: #fff;
+	color: #000;
 	font-weight: bolder;
 	cursor: pointer;
 	width: 6%;
@@ -74,7 +74,8 @@ margin: auto;
 	height: 60px;
 	float: right;
 	margin-right: 20px;
-	background: #000;
+	background: rgba(200, 200, 200, 0.2);
+
 }
 
 #e64Public{
@@ -92,7 +93,7 @@ margin: auto;
 	height: 50px;
 	background: rgba(255, 255, 255, 0.8);
 	overflow: hidden;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 #e64LogoU{
 	width: 52px;

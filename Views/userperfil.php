@@ -16,6 +16,7 @@
 					<div id="e64TexP">Puntos</div>
 					<div id="e64TexVlr">100</div>
 					<h2>Juegos</h2>
+					
 				</div>
 			</div>
 			
