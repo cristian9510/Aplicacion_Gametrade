@@ -30,7 +30,7 @@ header{
 	vertical-align: top;
 	margin-top: -50px;
 	list-style: none;
-	margin-left: 185px;
+	margin-left: 105px;
 	position: absolute;
 	z-index: 3;
 
@@ -55,7 +55,7 @@ header{
 }
 
 #code{
-	margin-left: -40px !important;
+	margin-left: -5px !important;
 	overflow: hidden;
 	background: url(../Imagen/inici.png) no-repeat;
 	width: 25%;
