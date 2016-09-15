@@ -6,6 +6,10 @@
     <script type="text/javascript" src="js/gweb.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesSheet/estilo.css">
     <title>quienes somos</title>
+    
+
+
+    
   </head>
   <body>
     <div id="dv_main">
