@@ -1,15 +1,15 @@
 <!--aqui recojemos los datos y los llevamos a la base de datos-->
 <?php
 class categoria_bono{
-  public static function guardar($cat_bono_nom,$cat_bono_fech){
+  public static function guardar($cat_bono_nom,$cat_bono_fech,$cat_estado){
     $pdo= ConexionBD::AbrirBD();
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="INSERT INTO tbl_categoria_bono(cat_bono_nom,cat_bono_fech) values (?,?)";
+    $sql="INSERT INTO tbl_categoria_bono(cat_bono_nom,cat_bono_fech,cat_estado) values (?,?,?)";
 
     $query= $pdo->prepare($sql);
-    $query->execute(array($cat_bono_nom,$cat_bono_fech));
+    $query->execute(array($cat_bono_nom,$cat_bono_fech,$cat_estado));
 
     ConexionBD::DesconectarBD();
 
@@ -47,29 +47,16 @@ class categoria_bono{
     return $result;
   }
 
-  public static function modificar($cat_bono_nom,$cat_bono_fech,$cat_bono_cod){
+  public static function modificar($cat_bono_nom,$cat_bono_fech,$cat_estado,$cat_bono_cod){
   $pdo=ConexionBD::AbrirBD();
   $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-  $sql="UPDATE tbl_categoria_bono SET cat_bono_nom= ?, cat_bono_fech=? WHERE cat_bono_cod=?";
+  $sql="UPDATE tbl_categoria_bono SET cat_bono_nom= ?, cat_bono_fech=?, cat_estado=? WHERE cat_bono_cod=?";
   $query= $pdo->prepare($sql);
-  $query->execute(array($cat_bono_nom,$cat_bono_fech,$cat_bono_cod));
+  $query->execute(array($cat_bono_nom,$cat_bono_fech,$cat_estado,$cat_bono_cod));
 
   ConexionBD::DesconectarBD();
 
-  }
-
-  public static function eliminar_cat_bono($catbono){
-    try {
-      $pdo=ConexionBD::AbrirBD();
-
-      $sql="DELETE FROM tbl_categoria_bono WHERE cat_bono_cod=?";
-      $query = $pdo->prepare($sql);
-      $query->execute(array($catbono));
-
-    } catch (Exception $e) {
-      echo "Error" . $e->getMessage();
-    }
   }
 }
  ?>

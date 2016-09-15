@@ -3,6 +3,7 @@
   require_once("../Model/Categoria_bono.class.php");
 
   $cat_bono_mo=categoria_bono::consultarporCodigo(base64_decode($_GET["codigo_cat_bono"]));
+  date_default_timezone_set('America/Bogota');
 ?>
 
 <meta charset="utf-8">
@@ -15,8 +16,9 @@
       <label>Nombre: </label>
       <input type="text" name="cat_bono_nom" required value="<?php echo $cat_bono_mo["cat_bono_nom"]; ?>">
       <br><br>
-      <label>Fecha: </label>
-      <input type="date" name="cat_bono_fech" required value="<?php echo $cat_bono_mo["cat_bono_fech"]; ?>">
+      <input type="hidden" name="cat_bono_fech" readonly value="<?php echo date('d/m/Y')?>"/>
+      <label>Estado: </label>
+      <input type="text" name="cat_estado" required value="<?php echo $cat_bono_mo["cat_estado"]; ?>">
       <br><br>
       <button  name="action" value="modificar">Modificar</button>
     </form>

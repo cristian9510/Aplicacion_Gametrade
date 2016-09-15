@@ -12,10 +12,11 @@ switch ($accion) {
   //en esta parte se guardan los datos en la variable guardarbono que esta encima
   $cat_bono_nom=$_POST["cat_bono_nom"];
   $cat_bono_fech=$_POST["cat_bono_fech"];
+  $cat_estado="activo";
 
   //se validan los datos, y le verificamos al usuario si esta guardado o no
   try {
-    categoria_bono::guardar($cat_bono_nom,$cat_bono_fech);
+    categoria_bono::guardar($cat_bono_nom,$cat_bono_fech,$cat_estado);
     header("location:../Views/admin_categoria_bono.php");
   } catch (Exception $e) {
       echo "No guardo"+$e;
@@ -27,22 +28,14 @@ switch ($accion) {
       $cat_bono_nom=$_POST["cat_bono_nom"];
       $cat_bono_fech=$_POST["cat_bono_fech"];
       $cat_bono_cod=$_POST["cat_bono_cod"];
+      $cat_estado=$_POST["cat_estado"];
+
       try {
-        categoria_bono::modificar($cat_bono_nom,$cat_bono_fech,$cat_bono_cod);
+        categoria_bono::modificar($cat_bono_nom,$cat_bono_fech,$cat_estado,$cat_bono_cod);
         echo "Modifico";
       }
       catch (Exception $e) {
         echo "Ocurrio un error".$e ;
-      }
-      break;
-
-    case 'eliminar_cat_bono':
-      try {
-        $catbono = base64_decode($_GET["codigo_cat_bono"]);
-        categoria_bono::eliminar_cat_bono($catbono);
-        // header("location:http://localhost:8000/Aplicacion_gametrade/Views/admin_categoria_bono.php");
-      } catch (Exception $e) {
-        echo "string" . $e->getMessage() . $e->getLine();
       }
       break;
 }

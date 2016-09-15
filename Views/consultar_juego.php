@@ -42,7 +42,7 @@
              <td><?php echo $bn["jue_pal_clave"];   ?></td>
              <td><?php echo $bn["jue_estado"];      ?></td>
              <td>
-               <a href="modificar_juego.php?codigo_juego=<?php echo base64_encode($bn["usu_cod"]); ?>">Modificar</a>
+               <a href="modificar_juego.php?codigo_juego=<?php echo base64_encode($bn["jue_cod"]); ?>">Modificar</a>
              </td>
            </tr>
         <?php endforeach ?>

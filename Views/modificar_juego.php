@@ -4,8 +4,7 @@
 
   $juegomo =Gestion_Videojuego::consultarporCodigo(base64_decode($_GET["codigo_juego"]));
   date_default_timezone_set('America/Bogota');
-  //cuardate terminar y organizar lo que vallas a organizar
-  
+
  ?>
 
 
@@ -15,13 +14,13 @@
    <head>
      <meta charset="utf-8">
      <title>modificar usuario</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script> -->
    </head>
    <body>
      <div class="usuariomodificado">
        <h1 style="text-align: center;">Modificar juego</h1>
-       <form  action="../Controller/juego_admi.controller.php" method="post">
+       <form  action="../Controller/juego_admin.controller.php" method="post">
 
         <input type="hidden" name="jue_cod" readonly value="<?php echo $juegomo["jue_cod"]; ?>" />
 
@@ -70,7 +69,7 @@
  				<br><br>
 
 
-         <button type="submit" name="action"><a class="waves-effect waves-light btn">Modificar</button></a>
+         <button type="submit" name="action" value="modificar"><a class="waves-effect waves-light btn">Modificar</button></a>
 
        </form>
      </div>

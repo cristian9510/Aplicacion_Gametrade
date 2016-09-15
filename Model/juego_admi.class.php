@@ -13,57 +13,6 @@ class Gestion_Videojuego{
 
 	}
 
-	public static function consultarporCodigo($codigo){
-    $pdo = ConexionBD::AbrirBD();
-    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-
-    $sql="select * from tbl_videojuego WHERE jue_cod=?";
-
-    $query= $pdo->prepare($sql);
-    $query->execute(array($codigo));
-
-    $result= $query->fetch(PDO::FETCH_BOTH);
-
-    ConexionBD::DesconectarBD();
-
-    return $result;
-  }
-
-	public static function mostrarConsol(){
-
-		$pdo = ConexionBD::AbrirBD();
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-		$sql= "select * from tbl_consola";
-
-		$query= $pdo->prepare($sql);
-		$query->execute();
-
-		$result=$query->fetchALL(PDO::FETCH_BOTH);
-
-		ConexionBD::DesconectarBD();
-
-		return $result;
-	}
-
-	 public static function mostrarCategoria(){
-
-		$pdo = ConexionBD::AbrirBD();
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-		$sql= "select * from tbl_categoria_jue";
-
-		$query= $pdo->prepare($sql);
-		$query->execute();
-
-		$result=$query->fetchALL(PDO::FETCH_BOTH);
-
-		ConexionBD::DesconectarBD();
-
-		return $result;
-	}
-
-
 	public static function mostrarjuego(){
 
 		$pdo = ConexionBD::AbrirBD();
@@ -81,23 +30,66 @@ class Gestion_Videojuego{
 		return $result;
 	}
 
+	public static function consultarporCodigo($codigo){
+    $pdo = ConexionBD::AbrirBD();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-	function mostrarcodigojuego(){
+    $sql="select * from tbl_videojuego WHERE jue_cod=?";
 
+    $query= $pdo->prepare($sql);
+    $query->execute(array($codigo));
+
+    $result= $query->fetch(PDO::FETCH_BOTH);
+
+    ConexionBD::DesconectarBD();
+
+    return $result;
+  }
+
+	public static function modificar($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado,$jue_cod){
 		$pdo = ConexionBD::AbrirBD();
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-		$sql= "select jue_cod from tbl_videojuego ORDER BY jue_cod desc";
-
+		$sql="UPDATE tbl_videojuego SET usu_cod= ?, jue_nom=?, cons_cod= ?, cat_cod=?, jue_desc=?, jue_cant=?, jue_trailer=?, jue_fech_public=?, jue_imagen=?, jue_pal_clave=?, jue_estado=? WHERE jue_cod= ?";
 		$query= $pdo->prepare($sql);
-		$query->execute();
-
-		$result=$query->fetch(PDO::FETCH_BOTH);
+		$query->execute(array($usu_cod,$jue_nom,$cons_cod,$cat_cod,$jue_desc,$jue_cant,$jue_trailer, $jue_fech_public,$jue_imagen,$jue_pal_clave,$jue_estado,$jue_cod));
 
 		ConexionBD::DesconectarBD();
-
-		return $result;
 	}
+
+	// 	public static function mostrarConsol(){
+	//
+	// 	$pdo = ConexionBD::AbrirBD();
+	// 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	//
+	// 	$sql= "select * from tbl_consola";
+	//
+	// 	$query= $pdo->prepare($sql);
+	// 	$query->execute();
+	//
+	// 	$result=$query->fetchALL(PDO::FETCH_BOTH);
+	//
+	// 	ConexionBD::DesconectarBD();
+	//
+	// 	return $result;
+	// }
+	//
+	//  public static function mostrarCategoria(){
+	//
+	// 	$pdo = ConexionBD::AbrirBD();
+	// 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	//
+	// 	$sql= "select * from tbl_categoria_jue";
+	//
+	// 	$query= $pdo->prepare($sql);
+	// 	$query->execute();
+	//
+	// 	$result=$query->fetchALL(PDO::FETCH_BOTH);
+	//
+	// 	ConexionBD::DesconectarBD();
+	//
+	// 	return $result;
+	// }
 }
 
 ?>

@@ -32,7 +32,17 @@ require_once("../Model/conexion.php");
 
 </section>
 
+<section id="stA_nacionalidad">
+	<div id="dvPais">as</div>
+	<div id="dvDepartament">ad</div>
+	<div id="dvCiudad">asd</div>
+</section>
+
 <section id="stA_Consola">
+
+</section>
+
+<section id="stA_Puntos">
 
 </section>
 
@@ -44,10 +54,6 @@ require_once("../Model/conexion.php");
 
 </section>
 
-<section id="stA_Puntos">
-
-</section>
-
 <section id="stA_Bono">
 
 </section>
@@ -56,19 +62,5 @@ require_once("../Model/conexion.php");
 
 </section>
 
-
-<section id="stA_Sancion">
-
-</section>
-
-<section id="stA_Puntosjue">
-
-</section>
-
-<section id="stA_nacionalidad">
-	<div id="dvPais">as</div>
-	<div id="dvDepartament">ad</div>
-	<div id="dvCiudad">asd</div>
-</section>
 </body>
 </html>

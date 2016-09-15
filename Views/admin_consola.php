@@ -1,30 +1,39 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	</head>
+	<body>
+		<div class="formularioconsola">
+			<section>
+				<form action="../Controller/consola.controller.php" method="post">
 
-<div class="formularioconsola">
-	<section>
-		<form action="../Controller/consola.controller.php" method="post">
+				<label>codigo: </label>
+				<input type="text" name="cons_cod"/> <br><br>
 
-		<label>codigo: </label>
-		<input type="text" name="cons_cod"/> <br><br>
+				<label>Nombre: </label>
+				<input type="text" name="cons_nom"/>
+				<br><br>
 
-		<label>Nombre: </label>
-		<input type="text" name="cons_nom"/>
-		<br><br>
+				<label>Referencia: </label>
+				<input type="number" name="cons_refer"/>
+				<br><br>
 
-		<label>Referencia: </label>
-		<input type="number" name="cons_refer"/>
-		<br><br>
+				<label>Imagen: </label>
+				<input type="text" name="cons_imagen"/>
+				<br><br>
 
-		<label>Imagen: </label>
-		<input type="text" name="cons_imagen"/>
-		<br><br>
+				<button name="action" value="guardarconsola"><a class="waves-effect waves-light btn">Enviar</button></a>
 
-		<button name="action" value="guardarconsola"><a class="waves-effect waves-light btn">Enviar</button></a>
+			</section>
+		</div>
+	</body>
+</html>
 
-	</section>
-</div>
 
 <div class="consultarconsola">
 	<section>
