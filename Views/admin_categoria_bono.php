@@ -16,27 +16,36 @@ date_default_timezone_set('America/Bogota');
    <body>
      <div class="formilario_cat_bono">
        <section>
-         <h1 style="text-align: center;color:#11E5BB"><font face="arial,">categoria de bonos</h1></font>
-         <!--aqui esta el formato y de esta de esta forma se hace -->
+         <h4>Registrar categoria de bono</h4>
          <form action="../Controller/categoria_bono.controller.php" method="post">
+           <div class="row">
+ 			         <div class="class=" col s12>
 
-           <label>nombre: </label>
-           <input type="text" name="cat_bono_nom">
-           <br>
-           <br>
+                  <div class="input-field col s6">
+                    <input type="text" name="cat_bono_nom">
+                    <label class="active" for="first_name2">Nombre.</label>
+                  </div>
+              </div>
+          </div>
            <!-- fecha -->
            <input type="hidden" name="cat_bono_fech" value="<?php echo date('d/m/Y')?>"/>
            <!--este es el boton-->
-           <button name="action" value="guardar_cat_bono"><a class="waves-effect waves-light btn">Guardar</button></a>
+           <button name="action" value="guardar_cat_bono" class="waves-effect waves-light btn">Guardar</button>
 
          </form>
        </section>
      </div>
+
+     <div class="consultar_categoria_bono">
+        <section>
+          <?php include ("consultar_categoria_bono.php") ?>
+        </section>
+     </div>
+
+     <script>
+         $(document).ready(function() {
+           Materialize.updateTextFields();
+         });
+     </script>
    </body>
  </html>
-
- <div class="consultar_categoria_bono">
-    <section>
-      <a href="consultar_categoria_bono.php">consultar categoria bono.</a>
-    </section>
- </div>

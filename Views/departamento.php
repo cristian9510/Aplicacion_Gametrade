@@ -1,45 +1,59 @@
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-
-
-
 <?php
 	require_once("../model/conexion.php");
 	require_once("../model/departamento.class.php");
 
 	$pais = Gestion_Departamento::cargarpais();
 ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	</head>
+	<body>
+		<div class="formulariodepartamento">
+			<section>
+				<h4>Registrar departamento</h4>
+				<form action="../Controller/departamento.controller.php" method="post">
+					<div class="row">
+						<div class="class=" col s12>
 
-<meta charset="utf-8">
-<div class="formulariodepartamento" id="admin_consola">
-	<section>
-		<form action="../Controller/departamento.controller.php" method="post">
+							<div class="input-field col s5">
+								<input type="text" name="depar_nom"/>
+								<label class="active" for="first_name2">Nombre del departamento.</label>
+							</div>
 
-		<label>Departamento: </label>
-		<input type="text" name="depar_nom"/>
-		<br><br>
+							<div class="input-field col s5">
+								<select id="pais_cod" name="pais_cod">
+									<option value="" disabled selected>Pais.</option>
+									<?php foreach ($pais as $pai ) {
+											echo "<option value=".$pai["pais_cod"].">".$pai["pais_nom"]."</option>";
+										}
+									?>
+								</select>
+							</div>
 
-		<label>Pais: </label>
-		<select id="pais_cod" name="pais_cod">
-			<option>Seleccionar</option>
-			<?php
-				foreach ($pais as $pai ) {
-					echo "<option value=".$pai["pais_cod"].">".$pai["pais_nom"]."</option>";
-				}
-			?>
-		</select>
-		<br><br>
+					</div>
+				</div>
 
-		
+				<button name="action" value="guardardepartamento" class="waves-effect waves-light btn">Aceptar</button>
+				</form>
+			</section>
+		</div>
 
-		<button name="action" value="guardardepartamento"><a class="waves-effect waves-light btn">Aceptar</button></a>
-		</form>
-	</section>
-</div>
+		<div class="consultardepartamento">
+			<section>
+				<a href="consultar_departamento.php" class="waves-effect waves-light btn">Cunsulatar departamentos.</a>
+			</section>
+		</div>
 
-<div class="consultardepartamento">
-	<section>
-		<a href="consultar_departamento.php"><h1>Cunsulatar departamentos.</h1></a>
-	</section>
-</div>
+		<script>
+			$(document).ready(function() {
+				Materialize.updateTextFields();
+			});
+		</script>
+
+	</body>
+</html>

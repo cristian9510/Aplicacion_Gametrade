@@ -19,55 +19,64 @@ $pto_cod=bono::mostrarpunto();
     <!--contenedor del formulario-->
     <div class="formulariobono">
       <section>
-        <h1 style="text-align: center;color: #000">Bono</h1>
+
+        <h1>Registrar bono</h1>
       <!--aqui esta el formato y de esta de esta forma se hace -->
         <form action="../Controller/bono.controller.php" method="post">
-          <label>Código de categoria de bono: </label>
+          <div class="row">
+						<div class="class=" col s12>
 
-          <select id="cat_bono_cod" name="cat_bono_cod" required>
-            <?php
-              echo "<option>Seleccione</option>";
+							<div class="input-field col s5">
+                <select id="cat_bono_cod" name="cat_bono_cod" required>
+                  <option value="" disabled selected>Categoria de bono</option>
+                  <?php foreach ($cat_bono_cod as $categoria) {
+                        echo "<option value=".$categoria["cat_bono_cod"].">".$categoria["cat_bono_nom"]."</option>";
+                    }?>
+                 </select>
+              </div>
 
-                foreach ($cat_bono_cod as $categoria) {
-                  echo "<option value=".$categoria["cat_bono_cod"].">".$categoria["cat_bono_nom"]."</option>";
-              }
+              <div class="row">
+                <div class="input-field col s5">
+                  <select id="pto_cod" name="pto_cod" required>
+                    <option value="" disabled selected>Puntos</option>
+                    <?php foreach ($pto_cod as $puntos) {
+                          echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_moneda"]."</option>";
+                      }?>
+                   </select>
+                 </div>
+               </div>
 
-             ?>
-           </select>
-          </br>
-          </br>
-          <label>Codigo de punto: </label>
-          <select id="pto_cod" name="pto_cod" required>
-            <?php
-              echo "<option>Seleccione</option>";
+               <div class="input-field col s5">
+                 <input type="text" name="bono_desc" required/>
+                 <label class="active" for="first_name2">Descripcion.</label>
+               </div>
 
-                foreach ($pto_cod as $puntos) {
-                  echo "<option value=".$puntos["pto_cod"].">".$puntos["pto_moneda"]."</option>";
-              }
+               <div class="row">
+                 <div class="input-field col s5">
+                   <input type="text" name="bono_cant" required/>
+                   <label class="active" for="first_name2">cantidad de bonos.</label>
+                 </div>
+               </div>
 
-             ?>
-           </select>
-          </br>
-          </br>
-          <label>Descripción de bono:</label>
-          <input type="text" name="bono_desc" required/>
-          </br>
-          </br>
-          <label>Cantidad de bonos:</label>
-          <input type="text" name="bono_cant" required/>
-          </br>
-          </br>
+             </div>
+           </div>
           <!--este es el boton-->
-          <button name="action" value="guardarbono"><a class="waves-effect waves-light btn">Guardar</button></a>
+          <button name="action" value="guardarbono" class="waves-effect waves-light btn">Guardar</button>
 
         </form>
       </section>
     </div>
+
+    <div class="consultar_bono">
+      <section>
+        <a href="consultar_bono.php" class="waves-effect waves-light btn">consultar bono.</a>
+      </section>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        Materialize.updateTextFields();
+      });
+    </script>
   </body>
 </html>
-
-<div class="consultar_bono">
-  <section>
-    <a href="consultar_bono.php">consultar bono.</a>
-  </section>
-</div>

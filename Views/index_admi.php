@@ -20,7 +20,7 @@ require_once("../Model/conexion.php");
 	<script type="text/javascript" src="js/gmindex_admi.js"></script>
 </head>
 <body>
-	<!--este es la parte del menu donde esta el logo-->
+	<!--este trae el menu-->
 <?php include("header_admi.php");?>
 
 <!--esta es la parte que esta relacionada con el menu-->
@@ -33,9 +33,9 @@ require_once("../Model/conexion.php");
 </section>
 
 <section id="stA_nacionalidad">
-	<div id="dvPais">as</div>
-	<div id="dvDepartament">ad</div>
-	<div id="dvCiudad">asd</div>
+	<div id="dvPais"></div>
+	<div id="dvDepartament"></div>
+	<div id="dvCiudad"></div>
 </section>
 
 <section id="stA_Consola">

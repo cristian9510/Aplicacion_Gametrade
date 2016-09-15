@@ -13,29 +13,40 @@
     <body>
       <div class="Categoria">
         <section>
-          <h1>Categoria de juego.</h1>
+          <h4>Registar categoria de juego.</h4>
           <form class="categoria_frm" action="../Controller/categoria.controller.php" method="post">
+            <div class="row">
+  						<div class="class=" col s12>
 
-            <label>Nombre:</label>
-            <input type="text" name="cat_nom"/>
-            </br></br>
+  							<div class="input-field col s5">
+                  <input type="text" name="cat_nom" required/>
+                  <label class="active" for="first_name2">Nombre de la categoria de juego.</label>
+  							</div>
 
-            <label>Descripcion:</label>
-            <br>
-            <textarea name="cat_desc" rows="5" cols="25"></textarea>
-            </br></br>
+                <div class="row">
+                  <div class="input-field col s5">
+                    <textarea name="cat_desc" rows="5" cols="25" required></textarea>
+                    <label class="active" for="first_name2">Descripcion.</label>
+                  </div>
+                </div>
 
             <input type="hidden" name="cat_fech" readonly="" value="<?php echo date('d/m/Y')?>"/>
 
-            <button name="action" value="guardar"><a class="waves-effect waves-light btn">Guardar</button></a>
+            <button name="action" value="guardar" class="waves-effect waves-light btn">Guardar</button>
           </form>
       </section>
       </div>
+
+      <div class="consultar_categoria_juego">
+        <section>
+            <a href="consultar_categoria_juego.php" class="waves-effect waves-light btn">Consultar juego.</a>
+        </section>
+      </div>
+
+      <script>
+  			$(document).ready(function() {
+  				Materialize.updateTextFields();
+  			});
+  		</script>
     </body>
 </html>
-
-<div class="consultar_categoria_juego">
-  <section>
-      <a href="consultar_categoria_juego.php">Consultar juego.</a>
-  </section>
-</div>

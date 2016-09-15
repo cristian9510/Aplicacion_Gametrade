@@ -13,114 +13,159 @@
 		<meta charset="utf-8">
 		<title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script>
       function myFunction(){
         var x = document.getElementById("usu_pass").value;
         var y = document.getElementById("usu_pass_c").value;
         if (x==y)
         {
-          document.getElementById("confirmar").innerHTML="Son iguales";
+          document.getElementById("confirmar").innerHTML="Las contraseñas coinciden";
         }
         else
         {
-          document.getElementById("confirmar").innerHTML="No coinciden";
+          document.getElementById("confirmar").innerHTML="Las contraseñas no coinciden";
         }
       }
-    </script>
-
+      </script>
 
 	</head>
 	<body>
 		<div class="formulariousuario">
       <section>
-        <h2>Registrar usuario</h2>
-  			<form action="../Controller/usuario.controller.php" method="post">
-          <label>Tipo de documento: </label>
-            <select class="select" name="tipo_cod" required>
-              <option value="" disabled selected>Choose your option</option>
-              <?php foreach ($documento as $docu): ?>
-              <option value="<?php echo $docu['tipo_cod'] ?>"><?php echo $docu['tipo_documento']; ?></option>
-              <?php endforeach ?>
-            </select>
-            <br><br>
+        <h4>Registrar usuario</h4>
+  			<form  action="../Controller/usuario.controller.php" method="post">
+          <div class="row">
+            <div class="class=" col s12>
+              <div class="input-field col s5">
+                  <select class="select" name="tipo_cod" required >
+                    <option value="" disabled selected>Tipo de documento</option>
+                     <?php foreach ($documento as $docu): ?>
+                     <option value="<?php echo $docu['tipo_cod'] ?>"><?php echo $docu['tipo_documento']; ?></option>
+                    <?php endforeach ?>
+                  </select>
+              </div>
 
-    				<label>Numero del documento: </label>
-    				<input type="number" name="usu_num_docum" required/>
-    				<br><br>
+                <div class="row">
+                  <div class="input-field col s5">
+                    <input type="number" name="usu_num_docum" required/>
+                    <label class="active" for="first_name2">Numero del documento.</label>
+                  </div>
+                </div>
 
-    				<label>Nombre: </label>
-    				<input type="text" name="usu_nom" required/>
-    				<br><br>
 
-    				<label>Apellido: </label>
-    				<input type="text" name="usu_apell" required/>
-    				<br><br>
+                  <div class="input-field col s5">
+                    <input type="text" name="usu_nom" required/>
+                    <label class="active" for="first_name2">Nombre.</label>
+                  </div>
 
-    				<label>Nick de usuario: </label>
-    				<input type="text" name="usu_nick"/>
-    				<br><br>
 
-    				<label>Correo electronico: </label>
-    				<input type="text" name="usu_mail" required/>
-    				<br><br>
 
-    				<label>Contraseña: </label>
-    				<input type="password" name="usu_pass" id="usu_pass" required/>
-    				<br><br>
+                <div class="row">
+                  <div class="input-field col s5">
+                    <input type="text" name="usu_apell" required/>
+                    <label class="active" for="first_name2">Apellido.</label>
+                  </div>
+                </div>
 
-    				<label>Confirmar la contraseña: </label>
-    				<input type="password" name="usu_pass" id="usu_pass_c" onkeyup="myFunction()" required/>
-            <span id="confirmar"></span>
-    				<br><br>
 
-    				<label>Fecha de nacimiento: </label>
-    				<input type="date" name="usu_naci"  required/>
-    				<br><br>
 
-    				<label>Agrega una foto: </label>
-    				<input type="text" name="photo"/>
-    				<button type="submit" name="agregarphoto">Aceptar</button>
-    				<br><br>
+                  <div class="input-field col s5">
+                    <input type="text" name="usu_nick"/>
+                    <label class="active" for="first_name2">Nick de usuario.</label>
+                  </div>
 
-    				<label>Telefono: </label>
-    				<input type="number" name="usu_tel" />
-    				<br><br>
 
-    				<label>Celular: </label>
-    				<input type="number" name="usu_cel" />
-    				<br><br>
+                <div class="row">
+                  <div class="input-field col s5">
+                    <input type="email" name="usu_mail" required/>
+                    <label class="active" for="first_name2" data-error="Por favor ingrese un correo">Correo electronico.</label>
+                  </div>
+                </div>
 
-            <label>Ciudad: </label>
-    				<select id="ciu_cod" name="ciu_cod" required>
-    		      <?php
-    		        echo "<option>Seleccione</option>";
-    		          foreach ($ciu as $ciudad) {
-    		            echo "<option value=".$ciudad["ciu_cod"].">".$ciudad["ciu_nom"]."</option>";
-    		        }
-    		       ?>
-            </select>
-            <br><br>
 
-    				<label>Dirreccion: </label>
-    				<input type="text" name="usu_dir" required/>
-    				<br><br>
-            <!-- fecha -->
+                  <div class="input-field col s5">
+                    <input type="password" name="usu_pass" id="usu_pass" required/>
+                    <label class="active" for="first_name2">Contraseña.</label>
+                  </div>
+
+
+                <div class="row">
+                  <div class="input-field col s5">
+                    <input type="password" name="usu_pass" id="usu_pass_c" onkeyup="myFunction()" required/>
+                    <span id="confirmar"></span>
+                    <label class="active" for="first_name2">Confirmar la contraseña.</label>
+                  </div>
+                </div>
+
+
+                  <div class="input-field col s5">
+                    <input type="date" name="usu_naci"  required/>
+                    <label class="active" for="first_name2">Fecha de nacimiento.</label>
+                  </div>
+
+
+                <div class="row">
+                  <div class="input-field col s5">
+                    <input type="text" name="photo"/>
+                    <label class="active" for="first_name2">Agrega una foto.</label>
+                    <button type="submit" name="agregarphoto">Aceptar</button>
+                  </div>
+                </div>
+
+
+                  <div class="input-field col s5">
+                    <input type="number" name="usu_tel" />
+                    <label class="active" for="first_name2">Telefono.</label>
+                  </div>
+
+
+                <div class="row">
+                  <div class="input-field col s5">
+                    <input type="number" name="usu_cel" required/>
+                    <label class="active" for="first_name2">Celular.</label>
+                  </div>
+                </div>
+
+                <div class="input-field col s5">
+            			<select id="ciu_cod" name="ciu_cod" required>
+                    <option value="" disabled selected>ciudad</option>
+            		    <?php foreach ($ciu as $ciudad) {
+            		        echo "<option value=".$ciudad["ciu_cod"].">".$ciudad["ciu_nom"]."</option>";
+            		    }?>
+                  </select>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s5">
+                    <input type="text" name="usu_dir" required/>
+                    <label class="active" for="first_name2">Dirreccion.</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fecha de creacion-->
     				<input type="hidden" name="usu_fech" readonly="" value="<?php echo date('d/m/Y')?>"/>
 
-            <button type="submit" name="action" value="guardarusuario">Aceptar</button>
+            <button class="waves-effect waves-light btn" name="action" value="guardarusuario">Aceptar</button>
   			  </form>
         </section>
 		  </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-     <script>
-         $(document).ready(function () {
-             $('select').material_select();
-         });
-     </script>
+    <script>
+       $(document).ready(function () {
+           $('select').material_select();
+       });
+
+       $(document).ready(function() {
+         Materialize.updateTextFields();
+       });
+  </script>
 	</body>
 </html>
 
 <div class="consultarusuario">
-    <a href="consultar_usuarios.php">Consultar usuario</a>
+    <a href="consultar_usuarios.php" class="waves-effect waves-light btn">Consultar usuario</a>
 </div>

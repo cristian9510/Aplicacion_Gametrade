@@ -1,15 +1,15 @@
 <?php
   class usuario{
-    public static function guardar($usu_tip_docum,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_fech,$usu_estado){
+    public static function guardar($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_fech,$usu_estado){
 
     $pdo = ConexionBD::AbrirBD();
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="INSERT INTO tbl_usuario(usu_tip_docum,usu_num_docum,usu_nom,usu_apell,usu_nick,usu_mail,usu_pass,usu_naci,photo,usu_tel,usu_cel,ciu_cod,usu_dir,usu_fech,usu_estado) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $sql="INSERT INTO tbl_usuario(tipo_cod,usu_num_docum,usu_nom,usu_apell,usu_nick,usu_mail,usu_pass,usu_naci,photo,usu_tel,usu_cel,ciu_cod,usu_dir,usu_fech,usu_estado) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     $query= $pdo->prepare($sql);
-    $query->execute(array($usu_tip_docum,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_fech,$usu_estado));
+    $query->execute(array($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_fech,$usu_estado));
 
     ConexionBD::DesconectarBD();
   }
@@ -67,13 +67,13 @@
     return $result;
   }
 
-  public static function modificarusuario($usu_tip_docum,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_estado,$usu_cod){
+  public static function modificarusuario($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_estado,$usu_cod){
     $pdo = ConexionBD::AbrirBD();
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $sql="UPDATE tbl_usuario SET usu_tip_docum=? ,usu_num_docum=? ,usu_nom=? ,usu_apell=? ,usu_nick=? ,usu_mail=? ,usu_pass=? ,usu_naci=? ,photo=? ,usu_tel=? ,usu_cel=? ,ciu_cod=? ,usu_dir=? ,usu_estado=? WHERE usu_cod= ?";
+    $sql="UPDATE tbl_usuario SET tipo_cod=? ,usu_num_docum=? ,usu_nom=? ,usu_apell=? ,usu_nick=? ,usu_mail=? ,usu_pass=? ,usu_naci=? ,photo=? ,usu_tel=? ,usu_cel=? ,ciu_cod=? ,usu_dir=? ,usu_estado=? WHERE usu_cod= ?";
     $query= $pdo->prepare($sql);
-    $query->execute(array($usu_tip_docum,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_estado,$usu_cod));
+    $query->execute(array($tipo_cod,$usu_num_docum,$usu_nom,$usu_apell,$usu_nick,$usu_mail,$usu_pass,$usu_naci,$photo,$usu_tel,$usu_cel,$ciu_cod,$usu_dir,$usu_estado,$usu_cod));
 
     ConexionBD::DesconectarBD();
   }
