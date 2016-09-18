@@ -1,7 +1,9 @@
 <?php
 require_once("../Model/conexion.php");
 require_once("../Model/Categoria_bono.class.php");
+
 $cat_bono= categoria_bono::mostrar_categoria_bono();
+
 date_default_timezone_set('America/Bogota');
  ?>
 

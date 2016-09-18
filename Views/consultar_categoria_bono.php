@@ -1,6 +1,7 @@
 <?php
 require_once("../Model/conexion.php");
 require_once("../Model/Categoria_bono.class.php");
+
 $cat_bono= categoria_bono::mostrar_categoria_bono();
  ?>
 
@@ -9,6 +10,8 @@ $cat_bono= categoria_bono::mostrar_categoria_bono();
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   </head>
   <body>
     <!--estes es el proceso para que aparesca y se pueda mostrar-->

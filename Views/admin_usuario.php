@@ -13,8 +13,16 @@
 		<meta charset="utf-8">
 		<title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type="text/javascript" >
+       $(document).ready(function () {
+           $('.select').material_select();
+           Materialize.updateTextFields();
+       });
+  </script>
     <script>
+
       function myFunction(){
         var x = document.getElementById("usu_pass").value;
         var y = document.getElementById("usu_pass_c").value;
@@ -37,12 +45,16 @@
   			<form  action="../Controller/usuario.controller.php" method="post">
           <div class="row">
             <div class="class=" col s12>
+
               <div class="input-field col s5">
+<label for="">Registro</label>
                   <select class="select" name="tipo_cod" required >
+
                     <option value="" disabled selected>Tipo de documento</option>
                      <?php foreach ($documento as $docu): ?>
                      <option value="<?php echo $docu['tipo_cod'] ?>"><?php echo $docu['tipo_documento']; ?></option>
-                    <?php endforeach ?>
+                   <?php endforeach ?>
+
                   </select>
               </div>
 
@@ -148,21 +160,12 @@
             <!-- fecha de creacion-->
     				<input type="hidden" name="usu_fech" readonly="" value="<?php echo date('d/m/Y')?>"/>
 
-            <button class="waves-effect waves-light btn" name="action" value="guardarusuario">Aceptar</button>
+            <button class="waves-effect waves-light btn" class="btn" name="action" value="guardarusuario">Aceptar</button>
   			  </form>
         </section>
 		  </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script>
-       $(document).ready(function () {
-           $('select').material_select();
-       });
 
-       $(document).ready(function() {
-         Materialize.updateTextFields();
-       });
-  </script>
 	</body>
 </html>
 
