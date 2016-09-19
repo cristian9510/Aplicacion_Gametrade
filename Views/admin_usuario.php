@@ -21,6 +21,8 @@
            Materialize.updateTextFields();
        });
   </script>
+
+  <!--este es para comparar contraseña-->
     <script>
 
       function myFunction(){
