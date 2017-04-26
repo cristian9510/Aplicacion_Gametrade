@@ -29,7 +29,7 @@
 	<div id="e64REusu">Registrarse</div>
 	<p>Si tienes videojuegos y quieres intercambiarlos, nosotros somos tu mejor opción <span>!!REGISTRATE!</span></p>
 	<h2>Formulario de registro</h2>
-	<form class="formRegis" action="../Controller/registro.controller.php" method="post">
+	<form class="formRegis" action="" method="post">
 
 		<ul id="ulContRegist">
 			<li>
