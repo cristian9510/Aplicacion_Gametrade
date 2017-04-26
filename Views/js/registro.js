@@ -1,4 +1,4 @@
-<!-registrar usuario--->
+
 
 $(document).ready(function() {
 

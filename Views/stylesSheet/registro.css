@@ -1,21 +1,45 @@
-/*este hay que unirlo con la otra hoja de estilo */
+
 
 body{
 	background: #eee;
 }
 #e64ContRegist{
 	width: 80%;
-	height: 850px;
+	height: auto;
 	border:groove 1px;
-	margin-left: 130px;
+	margin: 0 auto;
 	background: #fff;
 }
 
 #ulContRegist{
-	width: 50%;
-	height: 450px;
+	width: 30%;
+	height: 350px;
+
 	list-style: none;
+	overflow: hidden;
+	display: inline-block;
+	margin-left:10%;
+	
 }
+
+.clObliga{
+	color: #f00;
+}
+
+
+#ulContRegist li{
+	margin-top: 10px;
+}
+
+p{
+	padding-left: 30px;
+	font-size: 18px;
+}
+p span{
+	color: #f00;
+	font-weight: bolder;
+}
+
 
 h2{
 	color: #f00;
@@ -24,17 +48,65 @@ h2{
 
 #ulContRegist label{
 	display: inline-block;
-	width: 30%;
+	width: 40%;
 	line-height: 30px;
 	text-align: right;
 	padding-right: 10px;
 }
 #ulContRegist input{
 	display: inline-block;
+	width: 40%;
+	height: 25px;
 }
 #ulContRegist select{
 	display: inline-block;
+	width: 42%;
+	height: 25px;
+
 }
+
+#ulContRegist1{
+	width: 40%;
+	height: 350px;
+	overflow: hidden;
+	list-style: none;
+	display: inline-block;
+	
+}
+
+#ulContRegist1 li{
+	margin-top: 10px;
+}
+
+
+#ulContRegist1 label{
+	display: inline-block;
+	width: 30%;
+	line-height: 30px;
+	text-align: left;
+	padding-right: 10px;
+}
+#ulContRegist1 input{
+	display: inline-block;
+	width: 30%;
+	height: 25px;
+}
+#ulContRegist1 select{
+	display: inline-block;
+	width: 30%;
+	height: 25px;
+
+}
+
+.g-recaptcha{
+	margin: 0 auto;
+	overflow: hidden;
+	vertical-align: top;
+	width: 20%;
+	height: auto;
+
+}
+
 
 #e64REusu{
 	width: 60%;
@@ -42,10 +114,10 @@ h2{
 	font-size: 50px;
 	font-weight: bolder;
 	padding-top: 20px;
-	padding-left: 40px;
+	text-align: center;
 	border:groove 1px #f00;
+	margin: 0 auto;
 	margin-top: 20px;
-	margin-left: 30px;
 }
 
 #textUsu{
@@ -56,17 +128,20 @@ h2{
 }
 
 #enviarR{
-	width: 100px;
-	height: 30px;
-	font-size: 18px;
+	width: 35%;
+	height: 60px;
+	font-size: 30px;
 	border:groove 1px;
-	padding-left: 10px;
-	padding-top: 5px;
+	padding-top: 20px;
 	border-radius: 5px;
 	cursor: pointer;
+	margin: 0 auto;
+	text-align: center;
 	color: #fff;
 	background: #ccc;
-	margin-top: 30px;
+	margin-top:100px;
+	margin-bottom: 50px;
+
 }
 #enviarR:hover{
 	background: #f00;
