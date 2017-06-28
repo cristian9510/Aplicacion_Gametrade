@@ -1,0 +1,37 @@
+@import url('../font/roboto.css');
+
+/*colores*/
+
+$negro:#212121;
+$blanco:#ffffff;
+$gris-oscuro:#D8D8D8;
+$gris-medio:#E8E8E8;
+$gris-claro:#F8F8F8;
+$rojo:#FF0000;
+
+/*general*/
+
+$botones:#2196f3;
+$boton_hover:#9e9e9e;
+$link:#2196f3;
+$subtitulos:#03a9f4;
+
+/*typografia*/
+
+$h1:'Roboto',
+medium;
+$h2:'Roboto',
+regular;
+$h3:'Roboto',
+Light-Italic;
+$letraGeneral:'Roboto',
+Light;
+
+/*tamaños tipografia*/
+
+$size_h1:64px;
+$size_h2:32px;
+$size_h3:20px;
+$size_general:16px;
+$size_opcional:18px;
+$texto_botones:18px;

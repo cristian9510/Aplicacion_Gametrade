@@ -11,8 +11,9 @@
 <head>
 	<title>Registro</title>
 		<meta charset="utf8"/>
-		<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
-		<link rel="stylesheet" type="text/css" href="stylesSheet/registro.css"/>
+
+		<link rel="stylesheet" type="text/css" href="stylesSheet/main.css"/>
+		<link rel="stylesheet" type="text/css" href="font/roboto.css"/>
 
 		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/connection.js"></script>
