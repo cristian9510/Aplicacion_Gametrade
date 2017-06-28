@@ -3,14 +3,14 @@
 	<div id="dvContel">
 		<div id="invitLogin">Ingresa ya a nuestra pagina</div>
 		<div id="dvLogin">
-			<div>
+
 
 			<ul id="Login">
 				<li id="dvCode"><input type="text" placeholder="Usuario" name="txtCode" id="txtUsua" required/></li>
 				<li><input type="password" placeholder="**********" name="txtName" id="txtPass" required /></li>
 			</ul>
-			<div id="dvButonL" onclick="ConsultUsu();"><button  name="btnusu" id="btnOpen" value="ingresoUsu"></button></div>
-			</div>
+			<div id="dvButonL" onclick="ConsultUsu();"><button  name="btnusu" id="btnOpen" value="ingresoUsu"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
+
 			</div>
 
 		<ul id="ulRecord">
@@ -18,14 +18,15 @@
 			<li onclick="sb_menu('regist')">Registrate</li>
 		</ul>
 	</div>
-</header>
-<ul id="dvMenu">
-	<li id="code" onclick="sb_menu('home')"></li>
-	<li id="liwor" onclick="sb_menu('wor')"></li>
-	<li id="licontact" onclick="sb_menu('contact')"></li>
-	<li id="liUsa" onclick="sb_menu('usa')"></li>
-</ul>
 
+<ul id="dvMenu">
+	<li id="code" onclick="sb_menu('home')"><i class="fa fa-home" ></i>Inicio</li>
+	<li id="liwor" onclick="sb_menu('wor')"><i class="fa fa-user" ></i>Quienes Somos</li>
+	<li id="liUsa" onclick="sb_menu('usa')"><i class="fa fa-question" ></i>Como se usa</li>
+	<li id="licontact" onclick="sb_menu('contact')"><i class="fa fa-envelope" ></i>Contactanos</li>
+	
+</ul>
+</header>
 <div id="e64ConteContra">
 		<div id="e64Contras">
 			<div id="e64ClosPrinciC" onclick="sbclose('2');">X</div>

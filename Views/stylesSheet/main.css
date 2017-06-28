@@ -30,53 +30,28 @@ header {
 
 #dvMenu {
   width: 60%;
-  height: 75px;
+  height: 30px;
   overflow: hidden;
   vertical-align: top;
-  margin-top: -50px;
   list-style: none;
-  margin-left: 105px;
-  position: absolute;
-  z-index: 3; }
+  margin: 0 20%; }
   #dvMenu li {
-    width: 25%;
+    width: 17%;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
     height: 90px;
     float: left;
-    margin-left: 3px;
+    margin-left: 10px;
     cursor: pointer; }
+    #dvMenu li i {
+      color: #fe4549;
+      padding-right: 10px; }
 
 #dvContel {
-  width: 45%;
+  width: 33%;
   float: right;
   margin-left: -200px; }
-
-#code {
-  margin-left: -5px !important;
-  overflow: hidden;
-  background: url(../Imagen/inici.png) no-repeat;
-  width: 25%;
-  height: 80px;
-  overflow: hidden; }
-
-#liwor {
-  background: url(../Imagen/quienes_som.png) no-repeat;
-  width: 25%;
-  height: 80px;
-  margin-left: -75px !important; }
-
-#licontact {
-  background: url(../Imagen/contacteno.png) no-repeat;
-  width: 25%;
-  height: 80px;
-  margin-top: 5px;
-  margin-left: 60px;
-  margin-left: 15px !important; }
-
-#liUsa {
-  background: url(../Imagen/como.jpg) no-repeat;
-  width: 25%;
-  height: 80px;
-  margin-left: -25px !important; }
 
 #invitLogin {
   width: 62%;
@@ -111,7 +86,10 @@ header {
   height: 30px;
   list-style: none;
   background: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background: #fe4549; }
+  #btnOpen i {
+    font-size: 20px; }
 
 #ulRecord {
   list-style: none;
@@ -124,8 +102,9 @@ header {
     color: #03a9f4;
     cursor: pointer;
     display: inline-block;
-    font-size: 20px;
-    margin-left: 10px; }
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 10px; }
 
 #ulMenu {
   width: 100%;
@@ -163,7 +142,7 @@ header {
       border: groove 1px;
       border-radius: 5px;
       padding-left: 5px;
-      padding-top: 5px;
+      padding-top: 7px;
       overflow: hidden; }
 
 #e64NueContra {

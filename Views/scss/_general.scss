@@ -28,61 +28,34 @@ header {
 
 #dvMenu {
   width: 60%;
-  height: 75px;
+  height: 30px;
   overflow: hidden;
   vertical-align: top;
-  margin-top: -50px;
   list-style: none;
-  margin-left: 105px;
-  position: absolute;
-  z-index: 3;
+  margin: 0 20%;
   li {
-    width: 25%;
+    width: 17%;
+    font-size: 25px;
+    color: $blanco;
+    text-align: center;
     height: 90px;
     float: left;
-    margin-left: 3px;
+    margin-left: 10px;
     cursor: pointer;
+    i {
+      color: $rojoHeader;
+      padding-right: 10px;
+    }
   }
 }
 
 #dvContel {
-  width: 45%;
+  width: 33%;
   float: right;
   margin-left: -200px;
 }
 
-#code {
-  margin-left: -5px !important;
-  overflow: hidden;
-  background: url(../Imagen/inici.png) no-repeat;
-  width: 25%;
-  height: 80px;
-  overflow: hidden;
-}
-
-#liwor {
-  background: url(../Imagen/quienes_som.png) no-repeat;
-  width: 25%;
-  height: 80px;
-  margin-left: -75px !important;
-}
-
-#licontact {
-  background: url(../Imagen/contacteno.png) no-repeat;
-  width: 25%;
-  height: 80px;
-  margin-top: 5px;
-  margin-left: 60px;
-  margin-left: 15px !important;
-}
-
-#liUsa {
-  background: url(../Imagen/como.jpg) no-repeat;
-  width: 25%;
-  height: 80px;
-  margin-left: -25px !important;
-}
-
+//inicio quienes somos contactenos y como se usa
 #invitLogin {
   width: 62%;
   height: 56px;
@@ -120,6 +93,10 @@ header {
   list-style: none;
   background: none;
   cursor: pointer;
+  background: $rojoHeader;
+  i {
+    font-size: 20px;
+  }
 }
 
 #ulRecord {
@@ -133,8 +110,9 @@ header {
     color: $subtitulos;
     cursor: pointer;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -176,7 +154,7 @@ header {
       border: groove 1px;
       border-radius: 5px;
       padding-left: 5px;
-      padding-top: 5px;
+      padding-top: 7px;
       overflow: hidden;
     }
   }
