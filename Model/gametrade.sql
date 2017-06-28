@@ -23,17 +23,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl_auditoria`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_auditoria` (
-  `audi_cod` int(11) NOT NULL,
-  `usu_cod` int(11) NOT NULL,
-  `audi_accion` varchar(200) COLLATE utf8_bin NOT NULL,
-  `audi_fech` date NOT NULL,
-  `audi_estado` int(1) NOT NULL,
-  `audi_desc` blob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 

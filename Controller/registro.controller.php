@@ -1,7 +1,7 @@
 <?php
 require_once("../Model/conexion.php");
 require_once("../Model/registroUsu.class.php");
-require_once("../Model/recaptchalib.php");
+/*require_once("../Model/recaptchalib.php");*/
 
 $accion=$_POST["v_action"];
 
