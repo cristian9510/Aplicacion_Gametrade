@@ -2,7 +2,8 @@
 <head>
 	<title>GAMETRADE</title>
 	<meta charset="utf8"/>
-	<link rel="stylesheet" type="text/css" href="stylesSheet/gstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="stylesSheet/main.css"/>
+		<link rel="stylesheet" type="text/css" href="font/roboto.css"/>
 	<link rel="stylesheet" type="text/css" href="stylesSheet/mindex.css"/>
 	<link rel="stylesheet" type="text/css" href="stylesSheet/Slider.css"/>
 
